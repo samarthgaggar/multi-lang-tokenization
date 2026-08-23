@@ -1,0 +1,7 @@
+language,unique_normalized_strings,avg_bpe_signatures_per_string,avg_fxt_signatures_per_string,percent_strings_with_fxt_seed_variation
+en,6,1.0,1.0,0.0
+es,6,1.0,1.0,0.0
+ru,6,1.0,1.0,0.0
+uk,6,1.0,1.0,0.0
+hi,6,1.0,1.0,0.0
+te,6,1.0,1.0,0.0
