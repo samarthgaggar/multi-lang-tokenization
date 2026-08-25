@@ -1,0 +1,2402 @@
+{
+  "On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "On|\u0120Monday|,|\u0120scientists|\u0120from|\u0120the|\u0120Stan|ford|\u0120University|\u0120School|\u0120of|\u0120Medicine|\u0120announced|\u0120the|\u0120invention|\u0120of|\u0120a|\u0120new|\u0120diagnost|ic|\u0120tool|\u0120that|\u0120can|\u0120sort|\u0120cells|\u0120by|\u0120type|:|\u0120a|\u0120tiny|\u0120print|able|\u0120chip|\u0120that|\u0120can|\u0120be|\u0120manufact|ured|\u0120using|\u0120standard|\u0120in|k|jet|\u0120print|ers|\u0120for|\u0120possibly|\u0120about|\u0120one|\u0120U|.S|.|\u0120cent|\u0120each|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "L|ead|\u0120researchers|\u0120say|\u0120this|\u0120may|\u0120bring|\u0120early|\u0120dete|ction|\u0120of|\u0120cancer|,|\u0120tub|er|culos|is|,|\u0120HIV|\u0120and|\u0120mal|aria|\u0120to|\u0120patients|\u0120in|\u0120low|-in|come|\u0120countries|,|\u0120where|\u0120the|\u0120survival|\u0120rates|\u0120for|\u0120illness|es|\u0120such|\u0120as|\u0120breast|\u0120cancer|\u0120can|\u0120be|\u0120half|\u0120those|\u0120of|\u0120rich|er|\u0120countries|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The JAS 39C Gripen crashed onto a runway at around 9:30 am local time (0230 UTC) and exploded, closing the airport to commercial flights.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120J|AS|\u0120|39|C|\u0120Gr|ip|en|\u0120crash|ed|\u0120onto|\u0120a|\u0120run|way|\u0120at|\u0120around|\u0120|9|:|30|\u0120am|\u0120local|\u0120time|\u0120(|0|23|0|\u0120U|TC|)|\u0120and|\u0120expl|od|ed|,|\u0120closing|\u0120the|\u0120airport|\u0120to|\u0120commercial|\u0120fl|ights|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The pilot was identified as Squadron Leader Dilokrit Pattavee.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120pilot|\u0120was|\u0120identified|\u0120as|\u0120Squ|ad|ron|\u0120Le|ader|\u0120D|il|ok|rit|\u0120Pat|ta|ve|e|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Local media reports an airport fire vehicle rolled over while responding.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "L|ocal|\u0120media|\u0120reports|\u0120an|\u0120airport|\u0120fire|\u0120vehicle|\u0120roll|ed|\u0120over|\u0120while|\u0120respon|ding|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "28-year-old Vidal had joined Bar\u00e7a three seasons ago, from Sevilla.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "28|-year|-old|\u0120V|idal|\u0120had|\u0120joined|\u0120Bar|\u00c3\u00a7a|\u0120three|\u0120seasons|\u0120ago|,|\u0120from|\u0120Sevilla|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Since moving to the Catalan-capital, Vidal had played 49 games for the club.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Since|\u0120moving|\u0120to|\u0120the|\u0120Catal|an|-c|ap|ital|,|\u0120V|idal|\u0120had|\u0120played|\u0120|49|\u0120games|\u0120for|\u0120the|\u0120club|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The protest started around 11:00 local time (UTC+1) on Whitehall opposite the police-guarded entrance to Downing Street, the Prime Minister's official residence.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120protest|\u0120started|\u0120around|\u0120|11|:|00|\u0120local|\u0120time|\u0120(|UT|C|+|1|)|\u0120on|\u0120White|h|all|\u0120opposite|\u0120the|\u0120police|-|guard|ed|\u0120entrance|\u0120to|\u0120Down|ing|\u0120Street|,|\u0120the|\u0120Prime|\u0120Minister|'s|\u0120official|\u0120resid|ence|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Just after 11:00, protesters blocked traffic on the northbound carriage in Whitehall.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Just|\u0120after|\u0120|11|:|00|,|\u0120protest|ers|\u0120block|ed|\u0120traffic|\u0120on|\u0120the|\u0120north|bound|\u0120car|riage|\u0120in|\u0120White|h|all|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "At 11:20, the police asked the protesters to move back on to the pavement, stating that they needed to balance the right to protest with the traffic building up.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "At|\u0120|11|:|20|,|\u0120the|\u0120police|\u0120asked|\u0120the|\u0120protest|ers|\u0120to|\u0120move|\u0120back|\u0120on|\u0120to|\u0120the|\u0120pav|ement|,|\u0120st|ating|\u0120that|\u0120they|\u0120needed|\u0120to|\u0120balance|\u0120the|\u0120right|\u0120to|\u0120protest|\u0120with|\u0120the|\u0120traffic|\u0120building|\u0120up|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Around 11:29, the protest moved up Whitehall, past Trafalgar Square, along the Strand, passing by Aldwych and up Kingsway towards Holborn where the Conservative Party were holding their Spring Forum in the Grand Connaught Rooms hotel.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "A|round|\u0120|11|:|29|,|\u0120the|\u0120protest|\u0120moved|\u0120up|\u0120White|h|all|,|\u0120past|\u0120Tra|fal|gar|\u0120Square|,|\u0120along|\u0120the|\u0120Str|and|,|\u0120passing|\u0120by|\u0120A|ld|w|ych|\u0120and|\u0120up|\u0120Kings|way|\u0120towards|\u0120Hol|born|\u0120where|\u0120the|\u0120Conserv|ative|\u0120Party|\u0120were|\u0120holding|\u0120their|\u0120Spring|\u0120Forum|\u0120in|\u0120the|\u0120Grand|\u0120Con|na|ught|\u0120Ro|oms|\u0120hotel|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Nadal's head to head record against the Canadian is 7\u20132.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "N|adal|'s|\u0120head|\u0120to|\u0120head|\u0120record|\u0120against|\u0120the|\u0120Canadian|\u0120is|\u0120|7|\u00e2\u0122\u0135|2|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "He recently lost against Raonic in the Brisbane Open.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "He|\u0120recently|\u0120lost|\u0120against|\u0120Ra|onic|\u0120in|\u0120the|\u0120Br|is|b|ane|\u0120Open|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Nadal bagged 88% net points in the match winning 76 points in the first serve.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "N|adal|\u0120bag|ged|\u0120|88|%|\u0120net|\u0120points|\u0120in|\u0120the|\u0120match|\u0120winning|\u0120|76|\u0120points|\u0120in|\u0120the|\u0120first|\u0120serve|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "After the match, King of Clay said, \"I am just excited about being back in the final rounds of the most important events. I am here to try to win this.\"": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "After|\u0120the|\u0120match|,|\u0120King|\u0120of|\u0120Cl|ay|\u0120said|,|\u0120\"|I|\u0120am|\u0120just|\u0120excited|\u0120about|\u0120being|\u0120back|\u0120in|\u0120the|\u0120final|\u0120round|s|\u0120of|\u0120the|\u0120most|\u0120important|\u0120events|.|\u0120I|\u0120am|\u0120here|\u0120to|\u0120try|\u0120to|\u0120win|\u0120this|.\"": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "\"Panama Papers\" is an umbrella term for roughly ten million documents from Panamanian law firm Mossack Fonseca, leaked to the press in spring 2016.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "\"|P|an|ama|\u0120Pap|ers|\"|\u0120is|\u0120an|\u0120|umbre|l|la|\u0120term|\u0120for|\u0120roughly|\u0120ten|\u0120million|\u0120documents|\u0120from|\u0120Pan|aman|ian|\u0120law|\u0120firm|\u0120M|oss|ack|\u0120F|onse|ca|,|\u0120le|aked|\u0120to|\u0120the|\u0120press|\u0120in|\u0120spring|\u0120|201|6|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The documents showed fourteen banks helped wealthy clients hide billions of US dollars of wealth to avoid taxes and other regulations.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120documents|\u0120showed|\u0120four|teen|\u0120banks|\u0120helped|\u0120wealth|y|\u0120clients|\u0120hide|\u0120bill|ions|\u0120of|\u0120US|\u0120dollars|\u0120of|\u0120wealth|\u0120to|\u0120avoid|\u0120taxes|\u0120and|\u0120other|\u0120regulations|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "British newspaper The Guardian suggested Deutsche Bank controlled roughly a third of the 1200 shell companies used to accomplish this.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "B|rit|ish|\u0120newspaper|\u0120The|\u0120Guard|ian|\u0120suggested|\u0120De|uts|che|\u0120Bank|\u0120controlled|\u0120roughly|\u0120a|\u0120third|\u0120of|\u0120the|\u0120|120|0|\u0120sh|ell|\u0120companies|\u0120used|\u0120to|\u0120accomplish|\u0120this|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "There were protests worldwide, several criminal prosecutions, and the leaders of the governments of Iceland and Pakistan both resigned.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "There|\u0120were|\u0120protest|s|\u0120worldwide|,|\u0120several|\u0120criminal|\u0120prosecut|ions|,|\u0120and|\u0120the|\u0120leaders|\u0120of|\u0120the|\u0120governments|\u0120of|\u0120I|cel|and|\u0120and|\u0120Pakistan|\u0120both|\u0120res|igned|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Born in Hong Kong, Ma studied at New York University and Harvard Law School and once held an American permanent resident \"green card\".": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "B|orn|\u0120in|\u0120Hong|\u0120Kong|,|\u0120Ma|\u0120studied|\u0120at|\u0120New|\u0120York|\u0120University|\u0120and|\u0120Harvard|\u0120Law|\u0120School|\u0120and|\u0120once|\u0120held|\u0120an|\u0120American|\u0120permanent|\u0120resident|\u0120\"|g|reen|\u0120card|\".": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Hsieh implied during the election that Ma might flee the country during a time of crisis.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "H|s|ie|h|\u0120impl|ied|\u0120during|\u0120the|\u0120election|\u0120that|\u0120Ma|\u0120might|\u0120fle|e|\u0120the|\u0120country|\u0120during|\u0120a|\u0120time|\u0120of|\u0120crisis|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Hsieh also argued that the photogenic Ma was more style than substance.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "H|s|ie|h|\u0120also|\u0120arg|ued|\u0120that|\u0120the|\u0120ph|ot|ogen|ic|\u0120Ma|\u0120was|\u0120more|\u0120style|\u0120than|\u0120subst|ance|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Despite these accusations, Ma won handily on a platform advocating closer ties with the Chinese mainland.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Despite|\u0120these|\u0120accus|ations|,|\u0120Ma|\u0120won|\u0120hand|ily|\u0120on|\u0120a|\u0120platform|\u0120advoc|ating|\u0120closer|\u0120t|ies|\u0120with|\u0120the|\u0120Chinese|\u0120main|land|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Today's Player of the Day is Alex Ovechkin of the Washington Capitals.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Today|'s|\u0120Player|\u0120of|\u0120the|\u0120Day|\u0120is|\u0120Alex|\u0120O|ve|ch|kin|\u0120of|\u0120the|\u0120Washington|\u0120Capital|s|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "He had 2 goals and 2 assists in Washington's 5-3 win over the Atlanta Thrashers.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "He|\u0120had|\u0120|2|\u0120goals|\u0120and|\u0120|2|\u0120assists|\u0120in|\u0120Washington|'s|\u0120|5|-|3|\u0120win|\u0120over|\u0120the|\u0120Atlanta|\u0120Th|rash|ers|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Ovechkin's first assist of the night was on the game-winning goal by rookie Nicklas Backstrom;": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "O|ve|ch|kin|'s|\u0120first|\u0120assist|\u0120of|\u0120the|\u0120night|\u0120was|\u0120on|\u0120the|\u0120game|-winning|\u0120goal|\u0120by|\u0120ro|ok|ie|\u0120Nick|las|\u0120Back|st|rom|;": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "his second goal of the night was his 60th of the season, becoming the first player to score 60 or more goals in a season since 1995-96, when Jaromir Jagr and Mario Lemieux each reached that milestone.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "his|\u0120second|\u0120goal|\u0120of|\u0120the|\u0120night|\u0120was|\u0120his|\u0120|60|th|\u0120of|\u0120the|\u0120season|,|\u0120becoming|\u0120the|\u0120first|\u0120player|\u0120to|\u0120score|\u0120|60|\u0120or|\u0120more|\u0120goals|\u0120in|\u0120a|\u0120season|\u0120since|\u0120|199|5|-|96|,|\u0120when|\u0120J|ar|om|ir|\u0120J|ag|r|\u0120and|\u0120Mario|\u0120L|em|ie|ux|\u0120each|\u0120reached|\u0120that|\u0120mil|est|one|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Batten was ranked 190th on the 2008 400 Richest Americans list with an estimated fortune of $2.3 billion.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "B|at|ten|\u0120was|\u0120ranked|\u0120|190|th|\u0120on|\u0120the|\u0120|200|8|\u0120|400|\u0120Rich|est|\u0120Americans|\u0120list|\u0120with|\u0120an|\u0120estimated|\u0120fort|une|\u0120of|\u0120$|2|.|3|\u0120billion|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "He graduated from the College of Arts & Sciences of the University of Virginia in 1950 and was a significant donor to that institution.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "He|\u0120gradu|ated|\u0120from|\u0120the|\u0120College|\u0120of|\u0120Arts|\u0120&|\u0120Sciences|\u0120of|\u0120the|\u0120University|\u0120of|\u0120Virginia|\u0120in|\u0120|195|0|\u0120and|\u0120was|\u0120a|\u0120significant|\u0120don|or|\u0120to|\u0120that|\u0120institution|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Iraq's Abu Ghraib prison has been set alight during a riot.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "I|ra|q|'s|\u0120Ab|u|\u0120G|hra|ib|\u0120prison|\u0120has|\u0120been|\u0120set|\u0120al|ight|\u0120during|\u0120a|\u0120r|iot|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The jail became notorious after prisoner abuse was discovered there after US forces took over.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120jail|\u0120became|\u0120not|or|ious|\u0120after|\u0120prison|er|\u0120abuse|\u0120was|\u0120discovered|\u0120there|\u0120after|\u0120US|\u0120forces|\u0120took|\u0120over|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Piquet Jr. crashed in the 2008 Singapore Grand Prix just after an early pit stop for Fernando Alonso, bringing out the safety car.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "P|ique|t|\u0120Jr|.|\u0120crash|ed|\u0120in|\u0120the|\u0120|200|8|\u0120Singap|ore|\u0120Grand|\u0120Pr|ix|\u0120just|\u0120after|\u0120an|\u0120early|\u0120pit|\u0120stop|\u0120for|\u0120Fernando|\u0120Alonso|,|\u0120bringing|\u0120out|\u0120the|\u0120safety|\u0120car|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "As the cars ahead of Alonso went in for fuel under the safety car, he moved up the pack to take victory.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "As|\u0120the|\u0120cars|\u0120ahead|\u0120of|\u0120Alonso|\u0120went|\u0120in|\u0120for|\u0120fuel|\u0120under|\u0120the|\u0120safety|\u0120car|,|\u0120he|\u0120moved|\u0120up|\u0120the|\u0120pack|\u0120to|\u0120take|\u0120victory|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Piquet Jr. was sacked after the 2009 Hungarian Grand Prix.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "P|ique|t|\u0120Jr|.|\u0120was|\u0120s|acked|\u0120after|\u0120the|\u0120|200|9|\u0120H|un|gar|ian|\u0120Grand|\u0120Pr|ix|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "At exactly 8:46 a.m. a hush fell across the city, marking the exact moment the first jet struck its target.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "At|\u0120exactly|\u0120|8|:|46|\u0120a|.m|.|\u0120a|\u0120h|ush|\u0120fell|\u0120across|\u0120the|\u0120city|,|\u0120mar|king|\u0120the|\u0120exact|\u0120moment|\u0120the|\u0120first|\u0120j|et|\u0120struck|\u0120its|\u0120target|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Two beams of light have been rigged up to point skywards overnight.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Two|\u0120be|ams|\u0120of|\u0120light|\u0120have|\u0120been|\u0120rig|ged|\u0120up|\u0120to|\u0120point|\u0120sky|wards|\u0120over|night|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Construction is ongoing for five new skyscrapers at the site, with a transportation center and memorial park in the middle.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Con|stru|ction|\u0120is|\u0120ongoing|\u0120for|\u0120five|\u0120new|\u0120sk|ys|c|rap|ers|\u0120at|\u0120the|\u0120site|,|\u0120with|\u0120a|\u0120transportation|\u0120center|\u0120and|\u0120mem|orial|\u0120park|\u0120in|\u0120the|\u0120middle|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The PBS show has more than two-dozen Emmy awards, and its run is shorter only than Sesame Street and Mister Rogers' Neighborhood.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120P|BS|\u0120show|\u0120has|\u0120more|\u0120than|\u0120two|-do|zen|\u0120Em|my|\u0120awards|,|\u0120and|\u0120its|\u0120run|\u0120is|\u0120sh|or|ter|\u0120only|\u0120than|\u0120S|es|ame|\u0120Street|\u0120and|\u0120M|ister|\u0120Rog|ers|'|\u0120Ne|igh|bor|hood|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Each episode of the show would focus on a theme in a specific book and then explore that theme through multiple stories.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Each|\u0120episode|\u0120of|\u0120the|\u0120show|\u0120would|\u0120focus|\u0120on|\u0120a|\u0120theme|\u0120in|\u0120a|\u0120specific|\u0120book|\u0120and|\u0120then|\u0120explore|\u0120that|\u0120theme|\u0120through|\u0120multiple|\u0120stories|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Each show would also provide recommendations for books that children should look for when they went to their library.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Each|\u0120show|\u0120would|\u0120also|\u0120provide|\u0120recommendations|\u0120for|\u0120books|\u0120that|\u0120children|\u0120should|\u0120look|\u0120for|\u0120when|\u0120they|\u0120went|\u0120to|\u0120their|\u0120library|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "John Grant, from WNED Buffalo (Reading Rainbow's home station) said \"Reading Rainbow taught kids why to read,... the love of reading \u2014 [the show] encouraged kids to pick up a book and to read.\"": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "John|\u0120Grant|,|\u0120from|\u0120W|N|ED|\u0120Buff|alo|\u0120(|Read|ing|\u0120Rain|bow|'s|\u0120home|\u0120station|)|\u0120said|\u0120\"|Read|ing|\u0120Rain|bow|\u0120taught|\u0120kids|\u0120why|\u0120to|\u0120read|,|...|\u0120the|\u0120love|\u0120of|\u0120reading|\u0120\u00e2\u0122\u0136|\u0120[|the|\u0120show|]|\u0120encouraged|\u0120kids|\u0120to|\u0120pick|\u0120up|\u0120a|\u0120book|\u0120and|\u0120to|\u0120read|.\"": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "It is believed by some, including John Grant, that both the funding crunch and a shift in the philosophy of educational television programming contributed to ending the series.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "It|\u0120is|\u0120believed|\u0120by|\u0120some|,|\u0120including|\u0120John|\u0120Grant|,|\u0120that|\u0120both|\u0120the|\u0120funding|\u0120cr|unch|\u0120and|\u0120a|\u0120shift|\u0120in|\u0120the|\u0120philosophy|\u0120of|\u0120educational|\u0120television|\u0120programming|\u0120contributed|\u0120to|\u0120ending|\u0120the|\u0120series|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The storm, situated about 645 miles (1040 km) west of the Cape Verde islands, is likely to dissipate before threatening any land areas, forecasters say.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120storm|,|\u0120situ|ated|\u0120about|\u0120|6|45|\u0120miles|\u0120(|104|0|\u0120km|)|\u0120west|\u0120of|\u0120the|\u0120C|ape|\u0120Ver|de|\u0120is|lands|,|\u0120is|\u0120likely|\u0120to|\u0120diss|ip|ate|\u0120before|\u0120threat|ening|\u0120any|\u0120land|\u0120areas|,|\u0120forec|asters|\u0120say|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Fred currently has winds of 105 miles per hour (165 km/h) and is moving towards the northwest.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "F|red|\u0120currently|\u0120has|\u0120wind|s|\u0120of|\u0120|105|\u0120miles|\u0120per|\u0120hour|\u0120(|165|\u0120km|/h|)|\u0120and|\u0120is|\u0120moving|\u0120towards|\u0120the|\u0120north|west|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Fred is the strongest tropical cyclone ever recorded so far south and east in the Atlantic since the advent of satellite imagery, and only the third major hurricane on record east of 35\u00b0W.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "F|red|\u0120is|\u0120the|\u0120strong|est|\u0120tropical|\u0120cy|cl|one|\u0120ever|\u0120recorded|\u0120so|\u0120far|\u0120south|\u0120and|\u0120east|\u0120in|\u0120the|\u0120Atlantic|\u0120since|\u0120the|\u0120advent|\u0120of|\u0120sat|ellite|\u0120imag|ery|,|\u0120and|\u0120only|\u0120the|\u0120third|\u0120major|\u0120h|urricane|\u0120on|\u0120record|\u0120east|\u0120of|\u0120|35|\u00c2\u00b0|W|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "On September 24, 1759, Arthur Guinness signed a 9,000 year lease for the St James' Gate Brewery in Dublin, Ireland.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "On|\u0120September|\u0120|24|,|\u0120|175|9|,|\u0120Ar|thur|\u0120Gu|in|ness|\u0120signed|\u0120a|\u0120|9|,|000|\u0120year|\u0120le|ase|\u0120for|\u0120the|\u0120St|\u0120James|'|\u0120G|ate|\u0120Brew|ery|\u0120in|\u0120Dub|lin|,|\u0120Ireland|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "250 years later, Guinness has grown to a global business that turns over 10 billion euros (US$14.7 billion) every year.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "250|\u0120years|\u0120later|,|\u0120Gu|in|ness|\u0120has|\u0120grown|\u0120to|\u0120a|\u0120global|\u0120business|\u0120that|\u0120turns|\u0120over|\u0120|10|\u0120billion|\u0120euros|\u0120(|US|$|14|.|7|\u0120billion|)|\u0120every|\u0120year|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Jonny Reid, co-driver for the A1GP New Zealand team, today made history by driving the fastest over the 48-year-old Auckland Harbour Bridge, New Zealand, legally.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "J|on|ny|\u0120Re|id|,|\u0120co|-d|r|iver|\u0120for|\u0120the|\u0120A|1|GP|\u0120New|\u0120Zealand|\u0120team|,|\u0120today|\u0120made|\u0120history|\u0120by|\u0120driving|\u0120the|\u0120fast|est|\u0120over|\u0120the|\u0120|48|-year|-old|\u0120A|uck|land|\u0120Har|bour|\u0120Bridge|,|\u0120New|\u0120Zealand|,|\u0120leg|ally|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Mr Reid managed to drive the New Zealand's A1GP car, Black Beauty at speeds over 160km/h seven times over the bridge.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Mr|\u0120Re|id|\u0120managed|\u0120to|\u0120drive|\u0120the|\u0120New|\u0120Zealand|'s|\u0120A|1|GP|\u0120car|,|\u0120Black|\u0120Beaut|y|\u0120at|\u0120spe|eds|\u0120over|\u0120|160|km|/h|\u0120seven|\u0120times|\u0120over|\u0120the|\u0120bridge|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The New Zealand police had trouble using their speed radar guns to see how fast Mr Reid was going because of how low Black Beauty is, and the only time the police managed to clock Mr Reid was when he slowed down to 160km/h.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120New|\u0120Zealand|\u0120police|\u0120had|\u0120trouble|\u0120using|\u0120their|\u0120speed|\u0120rad|ar|\u0120guns|\u0120to|\u0120see|\u0120how|\u0120fast|\u0120Mr|\u0120Re|id|\u0120was|\u0120going|\u0120because|\u0120of|\u0120how|\u0120low|\u0120Black|\u0120Beaut|y|\u0120is|,|\u0120and|\u0120the|\u0120only|\u0120time|\u0120the|\u0120police|\u0120managed|\u0120to|\u0120clock|\u0120Mr|\u0120Re|id|\u0120was|\u0120when|\u0120he|\u0120slow|ed|\u0120down|\u0120to|\u0120|160|km|/h|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "In the last 3 months, over 80 arrestees were released from the Central Booking facility without being formally charged.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "In|\u0120the|\u0120last|\u0120|3|\u0120months|,|\u0120over|\u0120|80|\u0120arr|este|es|\u0120were|\u0120released|\u0120from|\u0120the|\u0120Central|\u0120Book|ing|\u0120facility|\u0120without|\u0120being|\u0120form|ally|\u0120charged|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "In April this year, a temporary restaining order was issued by Judge Glynn against the facility to enforce the release of those held more than 24 hours after their intake who did not receive a hearing by a court commissioner.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "In|\u0120April|\u0120this|\u0120year|,|\u0120a|\u0120temporary|\u0120rest|ain|ing|\u0120order|\u0120was|\u0120issued|\u0120by|\u0120Judge|\u0120G|lyn|n|\u0120against|\u0120the|\u0120facility|\u0120to|\u0120enfor|ce|\u0120the|\u0120release|\u0120of|\u0120those|\u0120held|\u0120more|\u0120than|\u0120|24|\u0120hours|\u0120after|\u0120their|\u0120in|take|\u0120who|\u0120did|\u0120not|\u0120receive|\u0120a|\u0120hearing|\u0120by|\u0120a|\u0120court|\u0120commission|er|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The commissioner sets bail, if granted, and formalizes the charges filed by the arresting officer. The charges are then entered into the state's computer system where the case is tracked.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120commission|er|\u0120sets|\u0120bail|,|\u0120if|\u0120granted|,|\u0120and|\u0120formal|izes|\u0120the|\u0120charges|\u0120filed|\u0120by|\u0120the|\u0120arrest|ing|\u0120officer|.|\u0120The|\u0120charges|\u0120are|\u0120then|\u0120entered|\u0120into|\u0120the|\u0120state|'s|\u0120computer|\u0120system|\u0120where|\u0120the|\u0120case|\u0120is|\u0120track|ed|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The hearing also marks the date for the suspect\u2019s right to a speedy trial.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120hearing|\u0120also|\u0120marks|\u0120the|\u0120date|\u0120for|\u0120the|\u0120suspect|\u00e2\u0122\u013bs|\u0120right|\u0120to|\u0120a|\u0120speed|y|\u0120trial|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Peter Costello, Australian treasurer and the man most likely to succeed Prime Minister John Howard as Liberal party leader has thrown his support behind a nuclear power industry in Australia.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "P|eter|\u0120Cost|ello|,|\u0120Australian|\u0120treas|urer|\u0120and|\u0120the|\u0120man|\u0120most|\u0120likely|\u0120to|\u0120succeed|\u0120Prime|\u0120Minister|\u0120John|\u0120Howard|\u0120as|\u0120Lib|eral|\u0120party|\u0120leader|\u0120has|\u0120thrown|\u0120his|\u0120support|\u0120behind|\u0120a|\u0120nuclear|\u0120power|\u0120industry|\u0120in|\u0120Australia|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Mr Costello said that when nuclear power generation becomes economically viable, Australia should pursue its use.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Mr|\u0120Cost|ello|\u0120said|\u0120that|\u0120when|\u0120nuclear|\u0120power|\u0120generation|\u0120becomes|\u0120econom|ically|\u0120v|iable|,|\u0120Australia|\u0120should|\u0120pursue|\u0120its|\u0120use|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "\"If it becomes commercial, we should have it. That is, there's no in-principle objection to nuclear energy\" Mr Costello said.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "\"|If|\u0120it|\u0120becomes|\u0120commercial|,|\u0120we|\u0120should|\u0120have|\u0120it|.|\u0120That|\u0120is|,|\u0120there|'s|\u0120no|\u0120in|-pr|inci|ple|\u0120object|ion|\u0120to|\u0120nuclear|\u0120energy|\"|\u0120Mr|\u0120Cost|ello|\u0120said|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "According to Ansa, \"police were concerned by a couple of top-level hits they feared might spark a full-blown war of succession.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "According|\u0120to|\u0120An|sa|,|\u0120\"|pol|ice|\u0120were|\u0120concerned|\u0120by|\u0120a|\u0120couple|\u0120of|\u0120top|-level|\u0120hits|\u0120they|\u0120fear|ed|\u0120might|\u0120s|park|\u0120a|\u0120full|-b|l|own|\u0120war|\u0120of|\u0120success|ion|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Police said Lo Piccolo had the upper hand because he had been Provenzano's right-hand man in Palermo and his greater experience won him the respect of the older generation of bosses as they pursued Provenzano's policy of keeping as low as possible while strengthening their power network.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Pol|ice|\u0120said|\u0120Lo|\u0120P|ic|col|o|\u0120had|\u0120the|\u0120upper|\u0120hand|\u0120because|\u0120he|\u0120had|\u0120been|\u0120Pro|ven|z|ano|'s|\u0120right|-hand|\u0120man|\u0120in|\u0120Pal|er|mo|\u0120and|\u0120his|\u0120greater|\u0120experience|\u0120won|\u0120him|\u0120the|\u0120respect|\u0120of|\u0120the|\u0120older|\u0120generation|\u0120of|\u0120boss|es|\u0120as|\u0120they|\u0120purs|ued|\u0120Pro|ven|z|ano|'s|\u0120policy|\u0120of|\u0120keeping|\u0120as|\u0120low|\u0120as|\u0120possible|\u0120while|\u0120strength|ening|\u0120their|\u0120power|\u0120network|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "These bosses had been reined in by Provenzano when he put an end to the Riina-driven war against the state that claimed the lives of Mafia crusaders Giovanni Falcone and Paolo Borsellino in 1992.\"": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "These|\u0120boss|es|\u0120had|\u0120been|\u0120re|ined|\u0120in|\u0120by|\u0120Pro|ven|z|ano|\u0120when|\u0120he|\u0120put|\u0120an|\u0120end|\u0120to|\u0120the|\u0120R|i|ina|-d|r|iven|\u0120war|\u0120against|\u0120the|\u0120state|\u0120that|\u0120claimed|\u0120the|\u0120lives|\u0120of|\u0120M|af|ia|\u0120cr|us|aders|\u0120G|io|v|ann|i|\u0120Fal|con|e|\u0120and|\u0120Pa|olo|\u0120B|ors|ell|ino|\u0120in|\u0120|199|2|.\"": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Apple CEO Steve Jobs unveiled the device by walking onto the stage and taking the iPhone out of his jeans pocket.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Apple|\u0120CEO|\u0120Steve|\u0120Jobs|\u0120un|ve|iled|\u0120the|\u0120device|\u0120by|\u0120walking|\u0120onto|\u0120the|\u0120stage|\u0120and|\u0120taking|\u0120the|\u0120iPhone|\u0120out|\u0120of|\u0120his|\u0120je|ans|\u0120pocket|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "During his 2 hour speech he stated that \"Today Apple is going to reinvent the phone, We are going to make history today\".": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "During|\u0120his|\u0120|2|\u0120hour|\u0120speech|\u0120he|\u0120stated|\u0120that|\u0120\"|Today|\u0120Apple|\u0120is|\u0120going|\u0120to|\u0120rein|vent|\u0120the|\u0120phone|,|\u0120We|\u0120are|\u0120going|\u0120to|\u0120make|\u0120history|\u0120today|\".": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Brazil is the largest Roman Catholic country on Earth, and the Roman Catholic Church has consistently opposed the legalization of same-sex marriage in the country.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "B|ra|zil|\u0120is|\u0120the|\u0120largest|\u0120Roman|\u0120Catholic|\u0120country|\u0120on|\u0120Earth|,|\u0120and|\u0120the|\u0120Roman|\u0120Catholic|\u0120Church|\u0120has|\u0120consist|ently|\u0120opposed|\u0120the|\u0120legal|ization|\u0120of|\u0120same|-se|x|\u0120marriage|\u0120in|\u0120the|\u0120country|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The National Congress of Brazil has debated legalization for 10 years, and such civil marriages are currently only legal in Rio Grande do Sul.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120National|\u0120Congress|\u0120of|\u0120Brazil|\u0120has|\u0120deb|ated|\u0120legal|ization|\u0120for|\u0120|10|\u0120years|,|\u0120and|\u0120such|\u0120civil|\u0120mar|ri|ages|\u0120are|\u0120currently|\u0120only|\u0120legal|\u0120in|\u0120Rio|\u0120Grande|\u0120do|\u0120S|ul|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The original bill was drafted by former mayor of S\u00e3o Paulo, Marta Suplicy. The proposed legislation, after being amended, is now in the hands of Roberto Jefferson.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120original|\u0120bill|\u0120was|\u0120draft|ed|\u0120by|\u0120former|\u0120mayor|\u0120of|\u0120S|\u00c3\u00a3o|\u0120Pa|ulo|,|\u0120Mar|ta|\u0120Sup|lic|y|.|\u0120The|\u0120proposed|\u0120legislation|,|\u0120after|\u0120being|\u0120am|ended|,|\u0120is|\u0120now|\u0120in|\u0120the|\u0120hands|\u0120of|\u0120Roberto|\u0120Jeff|erson|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Protesters hope to collect a petition of 1.2 million signatures to present to the National Congress in November.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Pro|test|ers|\u0120hope|\u0120to|\u0120collect|\u0120a|\u0120petition|\u0120of|\u0120|1|.|2|\u0120million|\u0120sign|atures|\u0120to|\u0120present|\u0120to|\u0120the|\u0120National|\u0120Congress|\u0120in|\u0120November|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "After it became apparent that many families were seeking legal help to fight the evictions, a meeting was held on March 20 at the East Bay Community Law Center for the victims of the housing scam.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "After|\u0120it|\u0120became|\u0120apparent|\u0120that|\u0120many|\u0120families|\u0120were|\u0120seeking|\u0120legal|\u0120help|\u0120to|\u0120fight|\u0120the|\u0120ev|ict|ions|,|\u0120a|\u0120meeting|\u0120was|\u0120held|\u0120on|\u0120March|\u0120|20|\u0120at|\u0120the|\u0120East|\u0120Bay|\u0120Community|\u0120Law|\u0120Center|\u0120for|\u0120the|\u0120victims|\u0120of|\u0120the|\u0120housing|\u0120sc|am|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "When the tenants started sharing what had occurred to them, most of the families involved suddenly realized that Carolyn Wilson of the OHA had stolen their security deposits, and skipped out of town.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "When|\u0120the|\u0120ten|ants|\u0120started|\u0120sharing|\u0120what|\u0120had|\u0120occurred|\u0120to|\u0120them|,|\u0120most|\u0120of|\u0120the|\u0120families|\u0120involved|\u0120suddenly|\u0120realized|\u0120that|\u0120Carol|yn|\u0120Wilson|\u0120of|\u0120the|\u0120O|HA|\u0120had|\u0120st|olen|\u0120their|\u0120security|\u0120depos|its|,|\u0120and|\u0120sk|ipped|\u0120out|\u0120of|\u0120town|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Tenants at Lockwood Gardens believe that there may be another 40 families or more to face eviction, since they learned that OHA police are also investigating other public housing properties in Oakland that may be caught up in the housing scam.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Ten|ants|\u0120at|\u0120Lock|wood|\u0120Gard|ens|\u0120believe|\u0120that|\u0120there|\u0120may|\u0120be|\u0120another|\u0120|40|\u0120families|\u0120or|\u0120more|\u0120to|\u0120face|\u0120ev|iction|,|\u0120since|\u0120they|\u0120learned|\u0120that|\u0120O|HA|\u0120police|\u0120are|\u0120also|\u0120investig|ating|\u0120other|\u0120public|\u0120housing|\u0120properties|\u0120in|\u0120Oak|land|\u0120that|\u0120may|\u0120be|\u0120caught|\u0120up|\u0120in|\u0120the|\u0120housing|\u0120sc|am|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The band canceled the show at Maui's War Memorial Stadium, which was set to be attended by 9,000 people, and apologized to fans.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120band|\u0120cancel|ed|\u0120the|\u0120show|\u0120at|\u0120M|au|i|'s|\u0120War|\u0120Memorial|\u0120Stadium|,|\u0120which|\u0120was|\u0120set|\u0120to|\u0120be|\u0120attended|\u0120by|\u0120|9|,|000|\u0120people|,|\u0120and|\u0120ap|olog|ized|\u0120to|\u0120fans|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The band's management company, HK Management Inc., gave no initial reason when they canceled on September 20, but blamed logistical reasons by the next day.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120band|'s|\u0120management|\u0120company|,|\u0120H|K|\u0120Management|\u0120Inc|.,|\u0120gave|\u0120no|\u0120initial|\u0120reason|\u0120when|\u0120they|\u0120cancel|ed|\u0120on|\u0120September|\u0120|20|,|\u0120but|\u0120b|lam|ed|\u0120log|ist|ical|\u0120reasons|\u0120by|\u0120the|\u0120next|\u0120day|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The famous Greek lawyers, Sakis Kechagioglou and George Nikolakopoulos have been imprisoned in the Athens' jail of Korydallus, as they were found guilty of graft and corruption.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120famous|\u0120Greek|\u0120lawyers|,|\u0120S|ak|is|\u0120Ke|ch|ag|io|gl|ou|\u0120and|\u0120George|\u0120Nik|ol|ak|op|o|ulos|\u0120have|\u0120been|\u0120impr|ison|ed|\u0120in|\u0120the|\u0120Ath|ens|'|\u0120jail|\u0120of|\u0120K|ory|d|all|us|,|\u0120as|\u0120they|\u0120were|\u0120found|\u0120guilty|\u0120of|\u0120gra|ft|\u0120and|\u0120corrup|tion|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "As a result of this, a big scandal within the Greek legal community has been raised through the exposure of illegal actions that judges, lawyers, solicitors and attorneys have done during the previous years.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "As|\u0120a|\u0120result|\u0120of|\u0120this|,|\u0120a|\u0120big|\u0120sc|andal|\u0120within|\u0120the|\u0120Greek|\u0120legal|\u0120community|\u0120has|\u0120been|\u0120raised|\u0120through|\u0120the|\u0120exposure|\u0120of|\u0120illegal|\u0120actions|\u0120that|\u0120judges|,|\u0120lawyers|,|\u0120solicit|ors|\u0120and|\u0120att|or|neys|\u0120have|\u0120done|\u0120during|\u0120the|\u0120previous|\u0120years|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "A few weeks ago, after the information published by the journalist Makis Triantafylopoulos in his popular Television show \"Zoungla\" in Alpha TV, the member of Parliament and lawyer, Petros Mantouvalos was abdicated as members of his office had been involved in illegal graft and corruption.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "A|\u0120few|\u0120weeks|\u0120ago|,|\u0120after|\u0120the|\u0120information|\u0120published|\u0120by|\u0120the|\u0120journal|ist|\u0120M|ak|is|\u0120Tr|iant|af|y|lo|po|ulos|\u0120in|\u0120his|\u0120popular|\u0120Tele|vision|\u0120show|\u0120\"|Z|o|ung|la|\"|\u0120in|\u0120Al|pha|\u0120TV|,|\u0120the|\u0120member|\u0120of|\u0120Parliament|\u0120and|\u0120lawyer|,|\u0120P|etros|\u0120Mant|ou|val|os|\u0120was|\u0120ab|dic|ated|\u0120as|\u0120members|\u0120of|\u0120his|\u0120office|\u0120had|\u0120been|\u0120involved|\u0120in|\u0120illegal|\u0120gra|ft|\u0120and|\u0120corrup|tion|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Moreover, top judge Evangelos Kalousis is imprisoned as he found guilty of corruption and degenerate behaviour.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "More|over|,|\u0120top|\u0120judge|\u0120Evangel|os|\u0120Kal|ous|is|\u0120is|\u0120impr|ison|ed|\u0120as|\u0120he|\u0120found|\u0120guilty|\u0120of|\u0120corrup|tion|\u0120and|\u0120deg|ener|ate|\u0120behav|io|ur|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Roberts flatly refused to say about when he believes life begins, an important question when considering the ethics of abortion, saying that it would be unethical to comment on the specifics of likely cases.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "R|ober|ts|\u0120flat|ly|\u0120refused|\u0120to|\u0120say|\u0120about|\u0120when|\u0120he|\u0120believes|\u0120life|\u0120begins|,|\u0120an|\u0120important|\u0120question|\u0120when|\u0120considering|\u0120the|\u0120eth|ics|\u0120of|\u0120abort|ion|,|\u0120saying|\u0120that|\u0120it|\u0120would|\u0120be|\u0120un|eth|ical|\u0120to|\u0120comment|\u0120on|\u0120the|\u0120specif|ics|\u0120of|\u0120likely|\u0120cases|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "He did, however, reiterate his earlier statement that Roe v. Wade was the \"settled law of the land\", emphasizing the importance of consistent Supreme Court rulings.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "He|\u0120did|,|\u0120however|,|\u0120reiter|ate|\u0120his|\u0120earlier|\u0120statement|\u0120that|\u0120Ro|e|\u0120v|.|\u0120W|ade|\u0120was|\u0120the|\u0120\"|s|ett|led|\u0120law|\u0120of|\u0120the|\u0120land|\",|\u0120emphas|izing|\u0120the|\u0120importance|\u0120of|\u0120consistent|\u0120Supreme|\u0120Court|\u0120r|ul|ings|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "He also confirmed that he believed in the implied right to privacy which the Roe decision depended upon.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "He|\u0120also|\u0120confirmed|\u0120that|\u0120he|\u0120believed|\u0120in|\u0120the|\u0120impl|ied|\u0120right|\u0120to|\u0120privacy|\u0120which|\u0120the|\u0120Ro|e|\u0120decision|\u0120dep|ended|\u0120upon|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Maroochydore had finished on top of the ladder, six points clear of Noosa in second.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Mar|oo|ch|yd|ore|\u0120had|\u0120finished|\u0120on|\u0120top|\u0120of|\u0120the|\u0120lad|der|,|\u0120six|\u0120points|\u0120clear|\u0120of|\u0120No|osa|\u0120in|\u0120second|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The two sides would meet in the major semi final where Noosa ran out winners by 11 points.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120two|\u0120sides|\u0120would|\u0120meet|\u0120in|\u0120the|\u0120major|\u0120semi|\u0120final|\u0120where|\u0120No|osa|\u0120ran|\u0120out|\u0120winners|\u0120by|\u0120|11|\u0120points|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Maroochydore then defeated Caboolture in the Preliminary Final.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Mar|oo|ch|yd|ore|\u0120then|\u0120defe|ated|\u0120Cab|ool|t|ure|\u0120in|\u0120the|\u0120Pre|l|imin|ary|\u0120Final|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Hesperonychus elizabethae is a species of the family Dromaeosauridae and is a cousin of Velociraptor .": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "H|esper|ony|ch|us|\u0120el|iz|abet|ha|e|\u0120is|\u0120a|\u0120species|\u0120of|\u0120the|\u0120family|\u0120D|rom|ae|os|aur|ida|e|\u0120and|\u0120is|\u0120a|\u0120co|us|in|\u0120of|\u0120Vel|oci|ra|pt|or|\u0120.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "This fully feathered, warm blooded bird of prey was believed to have walked upright on two legs with claws like the Velociraptor.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "This|\u0120fully|\u0120fe|ather|ed|,|\u0120warm|\u0120blood|ed|\u0120bird|\u0120of|\u0120pre|y|\u0120was|\u0120believed|\u0120to|\u0120have|\u0120walked|\u0120up|right|\u0120on|\u0120two|\u0120legs|\u0120with|\u0120cla|ws|\u0120like|\u0120the|\u0120Vel|oci|ra|pt|or|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Its second claw was larger, giving rise to the name Hesperonychus which means \"western claw.\"": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "I|ts|\u0120second|\u0120cla|w|\u0120was|\u0120larger|,|\u0120giving|\u0120rise|\u0120to|\u0120the|\u0120name|\u0120H|esper|ony|ch|us|\u0120which|\u0120means|\u0120\"|west|ern|\u0120cla|w|.\"": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "In addition to the crushing ice, extreme weather conditions have been hampering rescue efforts.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "In|\u0120addition|\u0120to|\u0120the|\u0120cr|us|hing|\u0120ice|,|\u0120extreme|\u0120weather|\u0120conditions|\u0120have|\u0120been|\u0120ham|per|ing|\u0120resc|ue|\u0120efforts|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Pittman suggested that conditions wouldn't improve until sometime next week.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "P|itt|man|\u0120suggested|\u0120that|\u0120conditions|\u0120wouldn|'t|\u0120improve|\u0120until|\u0120somet|ime|\u0120next|\u0120week|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The amount and thickness of the pack ice, according to Pittman, is the worst it has been for sealers in the past 15 years.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120amount|\u0120and|\u0120thick|ness|\u0120of|\u0120the|\u0120pack|\u0120ice|,|\u0120according|\u0120to|\u0120P|itt|man|,|\u0120is|\u0120the|\u0120worst|\u0120it|\u0120has|\u0120been|\u0120for|\u0120se|al|ers|\u0120in|\u0120the|\u0120past|\u0120|15|\u0120years|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "News spread in the Red Lake community today as funerals for Jeff Weise and three of the nine victims were held that another student was arrested in connection with the school shootings of March 21.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "News|\u0120spread|\u0120in|\u0120the|\u0120Red|\u0120Lake|\u0120community|\u0120today|\u0120as|\u0120fun|er|als|\u0120for|\u0120Jeff|\u0120We|ise|\u0120and|\u0120three|\u0120of|\u0120the|\u0120nine|\u0120victims|\u0120were|\u0120held|\u0120that|\u0120another|\u0120student|\u0120was|\u0120arrested|\u0120in|\u0120connection|\u0120with|\u0120the|\u0120school|\u0120shoot|ings|\u0120of|\u0120March|\u0120|21|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Authorities said little officially beyond confirming today's arrest.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Aut|hor|ities|\u0120said|\u0120little|\u0120officially|\u0120beyond|\u0120confirm|ing|\u0120today|'s|\u0120arrest|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "However, a source with knowledge of the investigation told the Minneapolis Star-Tribune that it was Louis Jourdain, 16-year old son of Red Lake Tribal Chairman Floyd Jourdain.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "However|,|\u0120a|\u0120source|\u0120with|\u0120knowledge|\u0120of|\u0120the|\u0120investigation|\u0120told|\u0120the|\u0120Min|ne|apolis|\u0120Star|-T|rib|une|\u0120that|\u0120it|\u0120was|\u0120Louis|\u0120J|our|d|ain|,|\u0120|16|-year|\u0120old|\u0120son|\u0120of|\u0120Red|\u0120Lake|\u0120Trib|al|\u0120Chairman|\u0120Flo|yd|\u0120J|our|d|ain|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "It is not known at this time what charges will be laid or what led authorities to the boy but juvenile proceedings have begun in federal court.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "It|\u0120is|\u0120not|\u0120known|\u0120at|\u0120this|\u0120time|\u0120what|\u0120charges|\u0120will|\u0120be|\u0120laid|\u0120or|\u0120what|\u0120led|\u0120authorities|\u0120to|\u0120the|\u0120boy|\u0120but|\u0120juven|ile|\u0120proceed|ings|\u0120have|\u0120begun|\u0120in|\u0120federal|\u0120court|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Lodin also said officials decided to cancel the runoff in order to save Afghans the expense and security risk of another election.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "L|od|in|\u0120also|\u0120said|\u0120officials|\u0120decided|\u0120to|\u0120cancel|\u0120the|\u0120run|off|\u0120in|\u0120order|\u0120to|\u0120save|\u0120Af|gh|ans|\u0120the|\u0120exp|ense|\u0120and|\u0120security|\u0120risk|\u0120of|\u0120another|\u0120election|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Diplomats said that they had found enough ambiguity in the Afghan constitution to determine the runoff as unnecessary.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "D|ip|lom|ats|\u0120said|\u0120that|\u0120they|\u0120had|\u0120found|\u0120enough|\u0120amb|igu|ity|\u0120in|\u0120the|\u0120Afghan|\u0120const|itution|\u0120to|\u0120determine|\u0120the|\u0120run|off|\u0120as|\u0120un|ne|cess|ary|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "This contradicts earlier reports, which said that cancelling the runoff would have been against the constitution.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "This|\u0120contrad|ict|s|\u0120earlier|\u0120reports|,|\u0120which|\u0120said|\u0120that|\u0120can|cell|ing|\u0120the|\u0120run|off|\u0120would|\u0120have|\u0120been|\u0120against|\u0120the|\u0120const|itution|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The aircraft had been headed to Irkutsk and was being operated by interior troops.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120aircraft|\u0120had|\u0120been|\u0120headed|\u0120to|\u0120Ir|k|uts|k|\u0120and|\u0120was|\u0120being|\u0120oper|ated|\u0120by|\u0120interior|\u0120troops|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "An inquiry was established to investigate.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "An|\u0120inquir|y|\u0120was|\u0120established|\u0120to|\u0120investig|ate|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The Il-76 has been a major component of both the Russian and Soviet military since the 1970s, and had already seen a serious accident in Russia last month.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120Il|-|76|\u0120has|\u0120been|\u0120a|\u0120major|\u0120component|\u0120of|\u0120both|\u0120the|\u0120Russian|\u0120and|\u0120Sov|iet|\u0120military|\u0120since|\u0120the|\u0120|197|0|s|,|\u0120and|\u0120had|\u0120already|\u0120seen|\u0120a|\u0120serious|\u0120accident|\u0120in|\u0120Russia|\u0120last|\u0120month|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "On October 7 an engine separated on takeoff, without injuries. Russia briefly grounded Il-76s after that accident.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "On|\u0120October|\u0120|7|\u0120an|\u0120engine|\u0120separ|ated|\u0120on|\u0120take|off|,|\u0120without|\u0120injuries|.|\u0120Russia|\u0120brief|ly|\u0120ground|ed|\u0120Il|-|76|s|\u0120after|\u0120that|\u0120accident|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "800 miles of the Trans-Alaska Pipeline System were closed down following a spill of thousands of barrels of crude oil south of Fairbanks, Alaska.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "800|\u0120miles|\u0120of|\u0120the|\u0120Trans|-A|las|ka|\u0120P|ip|eline|\u0120System|\u0120were|\u0120closed|\u0120down|\u0120following|\u0120a|\u0120sp|ill|\u0120of|\u0120thousands|\u0120of|\u0120bar|rel|s|\u0120of|\u0120cr|ude|\u0120oil|\u0120south|\u0120of|\u0120Fair|ban|ks|,|\u0120Alaska|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "A power failure following a routine fire-command system test caused relief valves to open and crude oil overflowed near the Fort Greely pump station 9.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "A|\u0120power|\u0120failure|\u0120following|\u0120a|\u0120routine|\u0120fire|-com|mand|\u0120system|\u0120test|\u0120caused|\u0120relief|\u0120val|ves|\u0120to|\u0120open|\u0120and|\u0120cr|ude|\u0120oil|\u0120over|flow|ed|\u0120near|\u0120the|\u0120Fort|\u0120Gre|ely|\u0120pump|\u0120station|\u0120|9|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The valves opening allowed a pressure release for the system and oil flowed on a pad to a tank that can hold 55,000 barrels (2.3 million gallons).": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120val|ves|\u0120opening|\u0120allowed|\u0120a|\u0120pressure|\u0120release|\u0120for|\u0120the|\u0120system|\u0120and|\u0120oil|\u0120flow|ed|\u0120on|\u0120a|\u0120pad|\u0120to|\u0120a|\u0120tank|\u0120that|\u0120can|\u0120hold|\u0120|55|,|000|\u0120bar|rel|s|\u0120(|2|.|3|\u0120million|\u0120gall|ons|).": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "As of Wednesday afternoon, the tank vents were still leaking probably from thermal expansion inside the tank.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "As|\u0120of|\u0120Wednesday|\u0120afternoon|,|\u0120the|\u0120tank|\u0120v|ents|\u0120were|\u0120still|\u0120le|aking|\u0120probably|\u0120from|\u0120therm|al|\u0120expansion|\u0120inside|\u0120the|\u0120tank|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Another secondary containment area below the tanks capable of holding 104,500 barrels was not yet filled to capacity.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Another|\u0120secondary|\u0120contain|ment|\u0120area|\u0120below|\u0120the|\u0120tan|ks|\u0120capable|\u0120of|\u0120holding|\u0120|104|,|500|\u0120bar|rel|s|\u0120was|\u0120not|\u0120yet|\u0120filled|\u0120to|\u0120capacity|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The comments, live on television, were the first time that senior Iranian sources have admitted that the sanctions are having any effect.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120comments|,|\u0120live|\u0120on|\u0120television|,|\u0120were|\u0120the|\u0120first|\u0120time|\u0120that|\u0120senior|\u0120Iran|ian|\u0120sources|\u0120have|\u0120admitted|\u0120that|\u0120the|\u0120san|ctions|\u0120are|\u0120having|\u0120any|\u0120effect|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "They include financial restrictions and a ban by the European Union on the export of crude oil, from which the Iranian economy receives 80% of its foreign income.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "They|\u0120include|\u0120financial|\u0120restrictions|\u0120and|\u0120a|\u0120ban|\u0120by|\u0120the|\u0120European|\u0120Union|\u0120on|\u0120the|\u0120export|\u0120of|\u0120cr|ude|\u0120oil|,|\u0120from|\u0120which|\u0120the|\u0120Iran|ian|\u0120economy|\u0120rece|ives|\u0120|80|%|\u0120of|\u0120its|\u0120foreign|\u0120income|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "In its most recent monthly report, OPEC said exports of crude had fallen to their lowest level for two decades at 2.8 million barrels per day.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "In|\u0120its|\u0120most|\u0120recent|\u0120monthly|\u0120report|,|\u0120OP|EC|\u0120said|\u0120ex|ports|\u0120of|\u0120cr|ude|\u0120had|\u0120fall|en|\u0120to|\u0120their|\u0120lowest|\u0120level|\u0120for|\u0120two|\u0120decades|\u0120at|\u0120|2|.|8|\u0120million|\u0120bar|rel|s|\u0120per|\u0120day|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The country's supreme leader, Ayatollah Ali Khamenei, has described the dependency on oil as \"a trap\" dating from before Iran's Islamic revolution in 1979 and from which the country should free itself.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120country|'s|\u0120sup|reme|\u0120leader|,|\u0120Ay|at|ol|lah|\u0120Ali|\u0120K|ham|ene|i|,|\u0120has|\u0120described|\u0120the|\u0120depend|ency|\u0120on|\u0120oil|\u0120as|\u0120\"|a|\u0120tra|p|\"|\u0120dating|\u0120from|\u0120before|\u0120Iran|'s|\u0120Islamic|\u0120revolution|\u0120in|\u0120|197|9|\u0120and|\u0120from|\u0120which|\u0120the|\u0120country|\u0120should|\u0120free|\u0120itself|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "When the capsule gets to Earth and enters the atmosphere, at about 5am (eastern time), it is expected to put on quite a light show for folks in Northern California, Oregon, Nevada, and Utah.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "When|\u0120the|\u0120cap|s|ule|\u0120gets|\u0120to|\u0120Earth|\u0120and|\u0120ent|ers|\u0120the|\u0120atmosphere|,|\u0120at|\u0120about|\u0120|5|am|\u0120(|e|as|tern|\u0120time|),|\u0120it|\u0120is|\u0120expected|\u0120to|\u0120put|\u0120on|\u0120quite|\u0120a|\u0120light|\u0120show|\u0120for|\u0120folks|\u0120in|\u0120Northern|\u0120California|,|\u0120Oregon|,|\u0120Ne|vada|,|\u0120and|\u0120Utah|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The capsule will look much like a shooting star going across the sky.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120cap|s|ule|\u0120will|\u0120look|\u0120much|\u0120like|\u0120a|\u0120shooting|\u0120star|\u0120going|\u0120across|\u0120the|\u0120sky|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The capsule will be traveling at about 12.8 km or 8 miles per second, fast enough to go from San Francisco to Los Angeles in one minute.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120cap|s|ule|\u0120will|\u0120be|\u0120traveling|\u0120at|\u0120about|\u0120|12|.|8|\u0120km|\u0120or|\u0120|8|\u0120miles|\u0120per|\u0120second|,|\u0120fast|\u0120enough|\u0120to|\u0120go|\u0120from|\u0120San|\u0120Francisco|\u0120to|\u0120Los|\u0120Angeles|\u0120in|\u0120one|\u0120minute|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Stardust will set a new all-time record for being the fastest spacecraft to return to Earth, breaking the previous record set in May of 1969 during the return of the Apollo X command module.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "St|ard|ust|\u0120will|\u0120set|\u0120a|\u0120new|\u0120all|-time|\u0120record|\u0120for|\u0120being|\u0120the|\u0120fast|est|\u0120space|craft|\u0120to|\u0120return|\u0120to|\u0120Earth|,|\u0120breaking|\u0120the|\u0120previous|\u0120record|\u0120set|\u0120in|\u0120May|\u0120of|\u0120|196|9|\u0120during|\u0120the|\u0120return|\u0120of|\u0120the|\u0120Ap|ol|lo|\u0120X|\u0120command|\u0120mod|ule|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "\u201cIt will move over the west coast of northern California and will light the sky from California through central Oregon and on through Nevada and Idaho and into Utah,\u201d Tom Duxbury, Stardust's project manager said.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "\u00e2\u0122\u013eIt|\u0120will|\u0120move|\u0120over|\u0120the|\u0120west|\u0120coast|\u0120of|\u0120northern|\u0120California|\u0120and|\u0120will|\u0120light|\u0120the|\u0120sky|\u0120from|\u0120California|\u0120through|\u0120central|\u0120Oregon|\u0120and|\u0120on|\u0120through|\u0120Ne|vada|\u0120and|\u0120I|da|ho|\u0120and|\u0120into|\u0120Utah|,\u00e2\u0122\u013f|\u0120Tom|\u0120D|ux|bury|,|\u0120St|ard|ust|'s|\u0120project|\u0120manager|\u0120said|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Mr. Rudd's decision to sign the Kyoto climate accord isolates the United States, which will now be the only developed nation not to ratify the agreement.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Mr|.|\u0120R|ud|d|'s|\u0120decision|\u0120to|\u0120sign|\u0120the|\u0120Ky|oto|\u0120climate|\u0120accord|\u0120isol|ates|\u0120the|\u0120United|\u0120States|,|\u0120which|\u0120will|\u0120now|\u0120be|\u0120the|\u0120only|\u0120developed|\u0120nation|\u0120not|\u0120to|\u0120rat|ify|\u0120the|\u0120agreement|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Australia's former conservative government refused to ratify Kyoto, saying it would damage the economy with its heavy reliance on coal exports, while countries like India and China were not bound by emissions targets.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "A|ustr|alia|'s|\u0120former|\u0120conservative|\u0120government|\u0120refused|\u0120to|\u0120rat|ify|\u0120Ky|oto|,|\u0120saying|\u0120it|\u0120would|\u0120damage|\u0120the|\u0120economy|\u0120with|\u0120its|\u0120heavy|\u0120rel|iance|\u0120on|\u0120coal|\u0120ex|ports|,|\u0120while|\u0120countries|\u0120like|\u0120India|\u0120and|\u0120China|\u0120were|\u0120not|\u0120bound|\u0120by|\u0120emissions|\u0120targets|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "It is the biggest acquisition in eBay's history.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "It|\u0120is|\u0120the|\u0120biggest|\u0120acquis|ition|\u0120in|\u0120e|B|ay|'s|\u0120history|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The company hopes to diversify its profit sources and gain popularity in areas where Skype holds a strong position, such as China, Eastern Europe, and Brazil.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120company|\u0120hopes|\u0120to|\u0120divers|ify|\u0120its|\u0120profit|\u0120sources|\u0120and|\u0120gain|\u0120popular|ity|\u0120in|\u0120areas|\u0120where|\u0120Skype|\u0120holds|\u0120a|\u0120strong|\u0120position|,|\u0120such|\u0120as|\u0120China|,|\u0120Eastern|\u0120Europe|,|\u0120and|\u0120Brazil|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Scientists have suspected Enceladus as geologically active and a possible source of Saturn's icy E ring.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "S|cient|ists|\u0120have|\u0120suspect|ed|\u0120En|cel|ad|us|\u0120as|\u0120ge|olog|ically|\u0120active|\u0120and|\u0120a|\u0120possible|\u0120source|\u0120of|\u0120S|atur|n|'s|\u0120|icy|\u0120E|\u0120ring|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Enceladus is the most reflective object in the solar system, reflecting about 90 percent of the sunlight that hits it.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "En|cel|ad|us|\u0120is|\u0120the|\u0120most|\u0120reflect|ive|\u0120object|\u0120in|\u0120the|\u0120solar|\u0120system|,|\u0120reflect|ing|\u0120about|\u0120|90|\u0120percent|\u0120of|\u0120the|\u0120sun|light|\u0120that|\u0120hits|\u0120it|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The game publisher Konami stated today in a Japanese newspaper that they will not be releasing the game Six Days in Fallujah.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120game|\u0120publ|isher|\u0120K|on|ami|\u0120stated|\u0120today|\u0120in|\u0120a|\u0120Japanese|\u0120newspaper|\u0120that|\u0120they|\u0120will|\u0120not|\u0120be|\u0120rele|asing|\u0120the|\u0120game|\u0120Six|\u0120Days|\u0120in|\u0120Fall|u|ja|h|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The game is based on the Second Battle of Fallujah, a vicious battle between American and Iraqi forces.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120game|\u0120is|\u0120based|\u0120on|\u0120the|\u0120Second|\u0120Battle|\u0120of|\u0120Fall|u|ja|h|,|\u0120a|\u0120v|icious|\u0120battle|\u0120between|\u0120American|\u0120and|\u0120Iraq|i|\u0120forces|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The ACMA also found that despite the video being streamed on the Internet, Big Brother had not breached online content censorship laws as the media had not been stored on Big Brother's website.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120AC|MA|\u0120also|\u0120found|\u0120that|\u0120despite|\u0120the|\u0120video|\u0120being|\u0120stream|ed|\u0120on|\u0120the|\u0120Internet|,|\u0120Big|\u0120Bro|ther|\u0120had|\u0120not|\u0120bre|ach|ed|\u0120online|\u0120content|\u0120cens|orship|\u0120laws|\u0120as|\u0120the|\u0120media|\u0120had|\u0120not|\u0120been|\u0120stored|\u0120on|\u0120Big|\u0120Bro|ther|'s|\u0120website|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The Broadcasting Services Act provides for the regulation of Internet content, however to be considered Internet content, it must physically reside on a server.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120Broad|cast|ing|\u0120Services|\u0120Act|\u0120provides|\u0120for|\u0120the|\u0120regulation|\u0120of|\u0120Internet|\u0120content|,|\u0120however|\u0120to|\u0120be|\u0120considered|\u0120Internet|\u0120content|,|\u0120it|\u0120must|\u0120phys|ically|\u0120res|ide|\u0120on|\u0120a|\u0120server|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The United States embassy located in Nairobi, Kenya has issued a warning that \"extremists from Somalia\" are planning to launch suicide bomb attacks in Kenya and Ethiopia.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120United|\u0120States|\u0120emb|ass|y|\u0120located|\u0120in|\u0120N|ai|rob|i|,|\u0120Ken|ya|\u0120has|\u0120issued|\u0120a|\u0120warning|\u0120that|\u0120\"|ext|rem|ists|\u0120from|\u0120Som|alia|\"|\u0120are|\u0120planning|\u0120to|\u0120launch|\u0120suici|de|\u0120bomb|\u0120attacks|\u0120in|\u0120Ken|ya|\u0120and|\u0120Eth|io|p|ia|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The U.S. says it has received information from an undisclosed source that specifically mentions the use of suicide bombers to will blow up \"prominent landmarks\" in Ethiopia and Kenya.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120U|.S|.|\u0120says|\u0120it|\u0120has|\u0120received|\u0120information|\u0120from|\u0120an|\u0120un|dis|closed|\u0120source|\u0120that|\u0120specifically|\u0120ment|ions|\u0120the|\u0120use|\u0120of|\u0120suici|de|\u0120bomb|ers|\u0120to|\u0120will|\u0120blow|\u0120up|\u0120\"|p|rom|in|ent|\u0120land|mar|ks|\"|\u0120in|\u0120Eth|io|p|ia|\u0120and|\u0120Ken|ya|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Long before The Daily Show and The Colbert Report, Heck and Johnson envisioned a publication that would parody the news\u2014and news reporting\u2014when they were students at UW in 1988.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "L|ong|\u0120before|\u0120The|\u0120Daily|\u0120Show|\u0120and|\u0120The|\u0120Col|bert|\u0120Report|,|\u0120H|eck|\u0120and|\u0120Johnson|\u0120en|vision|ed|\u0120a|\u0120publication|\u0120that|\u0120would|\u0120par|ody|\u0120the|\u0120news|\u00e2\u0122\u0136and|\u0120news|\u0120reporting|\u00e2\u0122\u0136|wh|en|\u0120they|\u0120were|\u0120students|\u0120at|\u0120U|W|\u0120in|\u0120|198|8|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Since its inception, The Onion has become a veritable news parody empire, with a print edition, a website that drew 5,000,000 unique visitors in the month of October, personal ads, a 24 hour news network, podcasts, and a recently launched world atlas called Our Dumb World.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Since|\u0120its|\u0120in|ception|,|\u0120The|\u0120On|ion|\u0120has|\u0120become|\u0120a|\u0120ver|itable|\u0120news|\u0120par|ody|\u0120emp|ire|,|\u0120with|\u0120a|\u0120print|\u0120edition|,|\u0120a|\u0120website|\u0120that|\u0120d|rew|\u0120|5|,|000|,|000|\u0120unique|\u0120visitors|\u0120in|\u0120the|\u0120month|\u0120of|\u0120October|,|\u0120personal|\u0120ads|,|\u0120a|\u0120|24|\u0120hour|\u0120news|\u0120network|,|\u0120podcast|s|,|\u0120and|\u0120a|\u0120recently|\u0120launched|\u0120world|\u0120at|las|\u0120called|\u0120Our|\u0120D|umb|\u0120World|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Al Gore and General Tommy Franks casually rattle off their favorite headlines (Gore's was when The Onion reported he and Tipper were having the best sex of their lives after his 2000 Electoral College defeat).": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Al|\u0120G|ore|\u0120and|\u0120General|\u0120Tom|my|\u0120Fran|ks|\u0120cas|ually|\u0120rat|tle|\u0120off|\u0120their|\u0120favorite|\u0120head|lines|\u0120(|G|ore|'s|\u0120was|\u0120when|\u0120The|\u0120On|ion|\u0120reported|\u0120he|\u0120and|\u0120T|ipper|\u0120were|\u0120having|\u0120the|\u0120best|\u0120sex|\u0120of|\u0120their|\u0120lives|\u0120after|\u0120his|\u0120|200|0|\u0120Elect|oral|\u0120College|\u0120defeat|).": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Many of their writers have gone on to wield great influence on Jon Stewart and Stephen Colbert's news parody shows.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Many|\u0120of|\u0120their|\u0120writers|\u0120have|\u0120gone|\u0120on|\u0120to|\u0120w|ield|\u0120great|\u0120influence|\u0120on|\u0120Jon|\u0120Stewart|\u0120and|\u0120Stephen|\u0120Col|bert|'s|\u0120news|\u0120par|ody|\u0120shows|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The artistic event is also part of a campaign by the Bucharest City Hall that seeks to relaunch the image of the Romanian capital as a creative and colourful metropolis.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120art|istic|\u0120event|\u0120is|\u0120also|\u0120part|\u0120of|\u0120a|\u0120campaign|\u0120by|\u0120the|\u0120B|uch|ar|est|\u0120City|\u0120Hall|\u0120that|\u0120see|ks|\u0120to|\u0120rela|unch|\u0120the|\u0120image|\u0120of|\u0120the|\u0120Roman|ian|\u0120capital|\u0120as|\u0120a|\u0120creative|\u0120and|\u0120colour|ful|\u0120met|ropol|is|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The city will be the first in southeastern Europe to host CowParade, the world's largest public art event, between June and August this year.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120city|\u0120will|\u0120be|\u0120the|\u0120first|\u0120in|\u0120sout|he|as|tern|\u0120Europe|\u0120to|\u0120host|\u0120Cow|Par|ade|,|\u0120the|\u0120world|'s|\u0120largest|\u0120public|\u0120art|\u0120event|,|\u0120between|\u0120June|\u0120and|\u0120August|\u0120this|\u0120year|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Today's announcement also extended the government's commitment made in March of this year to fund extra carriages.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Today|'s|\u0120announcement|\u0120also|\u0120extended|\u0120the|\u0120government|'s|\u0120commitment|\u0120made|\u0120in|\u0120March|\u0120of|\u0120this|\u0120year|\u0120to|\u0120fund|\u0120extra|\u0120car|ri|ages|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "An additional 300 brings the total to 1,300 carriages to be acquired to relieve overcrowding.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "An|\u0120additional|\u0120|300|\u0120brings|\u0120the|\u0120total|\u0120to|\u0120|1|,|300|\u0120car|ri|ages|\u0120to|\u0120be|\u0120acquired|\u0120to|\u0120rel|ieve|\u0120over|c|row|ding|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Christopher Garcia, a spokesperson of the Los Angeles Police Department, said the suspected male offender is being investigated for trespassing rather than vandalism.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Christ|opher|\u0120Gar|cia|,|\u0120a|\u0120spokes|person|\u0120of|\u0120the|\u0120Los|\u0120Angeles|\u0120Police|\u0120Department|,|\u0120said|\u0120the|\u0120suspect|ed|\u0120male|\u0120off|ender|\u0120is|\u0120being|\u0120investig|ated|\u0120for|\u0120tres|pass|ing|\u0120rather|\u0120than|\u0120v|andal|ism|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The sign was not physically damaged; the modification was done using black tarpaulins decorated with signs of peace and heart to alter the \"O\" to read lowercase \"e\".": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120sign|\u0120was|\u0120not|\u0120phys|ically|\u0120dam|aged|;|\u0120the|\u0120mod|ification|\u0120was|\u0120done|\u0120using|\u0120black|\u0120tar|pa|ul|ins|\u0120decor|ated|\u0120with|\u0120signs|\u0120of|\u0120peace|\u0120and|\u0120heart|\u0120to|\u0120alter|\u0120the|\u0120\"|O|\"|\u0120to|\u0120read|\u0120lower|case|\u0120\"|e|\".": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Red tide is caused by a higher than normal concentration of Karenia brevis, a naturally-occurring single-celled marine organism.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Red|\u0120t|ide|\u0120is|\u0120caused|\u0120by|\u0120a|\u0120higher|\u0120than|\u0120normal|\u0120concentr|ation|\u0120of|\u0120K|aren|ia|\u0120bre|vis|,|\u0120a|\u0120naturally|-|oc|curr|ing|\u0120single|-|cell|ed|\u0120mar|ine|\u0120organ|ism|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Natural factors can intersect to produce ideal conditions, allowing this algae to increase in number dramatically.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "N|atural|\u0120factors|\u0120can|\u0120inters|ect|\u0120to|\u0120produce|\u0120ideal|\u0120conditions|,|\u0120allowing|\u0120this|\u0120al|ga|e|\u0120to|\u0120increase|\u0120in|\u0120number|\u0120dram|atically|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The algae produces a neurotoxin that can disable nerves in both humans and fish.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120al|ga|e|\u0120produ|ces|\u0120a|\u0120neuro|to|x|in|\u0120that|\u0120can|\u0120dis|able|\u0120nerv|es|\u0120in|\u0120both|\u0120humans|\u0120and|\u0120fish|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Fish often die because of the high concentrations of the toxin in the waters.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "F|ish|\u0120often|\u0120die|\u0120because|\u0120of|\u0120the|\u0120high|\u0120concentr|ations|\u0120of|\u0120the|\u0120tox|in|\u0120in|\u0120the|\u0120waters|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Humans can be affected by breathing affected water taken into the air by wind and waves.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "H|um|ans|\u0120can|\u0120be|\u0120affected|\u0120by|\u0120breat|hing|\u0120affected|\u0120water|\u0120taken|\u0120into|\u0120the|\u0120air|\u0120by|\u0120wind|\u0120and|\u0120w|aves|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "At its peak, Tropical Cyclone Gonu, named for a bag of palm leaves in the language of the Maldives, reached sustained winds of 240 kilometers an hour (149 miles per hour) .": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "At|\u0120its|\u0120peak|,|\u0120T|rop|ical|\u0120Cy|cl|one|\u0120G|on|u|,|\u0120named|\u0120for|\u0120a|\u0120bag|\u0120of|\u0120pal|m|\u0120leaves|\u0120in|\u0120the|\u0120language|\u0120of|\u0120the|\u0120Mal|d|ives|,|\u0120reached|\u0120sus|tained|\u0120wind|s|\u0120of|\u0120|240|\u0120kil|omet|ers|\u0120an|\u0120hour|\u0120(|149|\u0120miles|\u0120per|\u0120hour|)|\u0120.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "By early today, winds were around 83 km/h, and it was expect to keep weakening.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "By|\u0120early|\u0120today|,|\u0120wind|s|\u0120were|\u0120around|\u0120|83|\u0120km|/h|,|\u0120and|\u0120it|\u0120was|\u0120expect|\u0120to|\u0120keep|\u0120we|aken|ing|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "On Wednesday, the United States' National Basketball Association (NBA) suspended its professional basketball season due to concerns regarding COVID-19.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "On|\u0120Wednesday|,|\u0120the|\u0120United|\u0120States|'|\u0120National|\u0120Bas|ket|ball|\u0120Association|\u0120(|N|BA|)|\u0120suspend|ed|\u0120its|\u0120professional|\u0120basketball|\u0120season|\u0120due|\u0120to|\u0120concerns|\u0120regarding|\u0120COVID|-|19|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The NBA's decision followed a Utah Jazz player testing positive for the COVID-19 virus.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120NBA|'s|\u0120decision|\u0120followed|\u0120a|\u0120Utah|\u0120Jazz|\u0120player|\u0120testing|\u0120positive|\u0120for|\u0120the|\u0120COVID|-|19|\u0120virus|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "\"Based on this fossil, that means the split is much earlier than has been anticipated by the molecular evidence.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "\"|B|ased|\u0120on|\u0120this|\u0120f|oss|il|,|\u0120that|\u0120means|\u0120the|\u0120split|\u0120is|\u0120much|\u0120earlier|\u0120than|\u0120has|\u0120been|\u0120anticip|ated|\u0120by|\u0120the|\u0120mole|cular|\u0120evidence|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "That means everything has to be put back,\" said researcher at the Rift Valley Research Service in Ethiopia and a co-author of the study, Berhane Asfaw.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "That|\u0120means|\u0120everything|\u0120has|\u0120to|\u0120be|\u0120put|\u0120back|,\"|\u0120said|\u0120research|er|\u0120at|\u0120the|\u0120R|ift|\u0120Valley|\u0120Research|\u0120Service|\u0120in|\u0120Eth|io|p|ia|\u0120and|\u0120a|\u0120co|-|aut|hor|\u0120of|\u0120the|\u0120study|,|\u0120Ber|h|ane|\u0120As|f|aw|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Until now, AOL has been able to move and develop the IM market at its own pace, due to its widespread use within the United States.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Un|til|\u0120now|,|\u0120A|OL|\u0120has|\u0120been|\u0120able|\u0120to|\u0120move|\u0120and|\u0120develop|\u0120the|\u0120IM|\u0120market|\u0120at|\u0120its|\u0120own|\u0120pace|,|\u0120due|\u0120to|\u0120its|\u0120w|ides|p|read|\u0120use|\u0120within|\u0120the|\u0120United|\u0120States|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "With this arrangement in place, this freedom might end.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "With|\u0120this|\u0120arrang|ement|\u0120in|\u0120place|,|\u0120this|\u0120freedom|\u0120might|\u0120end|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The number of users of the Yahoo! and Microsoft services combined will rival the number of AOL's customers.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120number|\u0120of|\u0120users|\u0120of|\u0120the|\u0120Yahoo|!|\u0120and|\u0120Microsoft|\u0120services|\u0120combined|\u0120will|\u0120rival|\u0120the|\u0120number|\u0120of|\u0120A|OL|'s|\u0120customers|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The Northern Rock bank had been nationalised in 2008 following the revelation that the company had received emergency support from the UK Government.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120Northern|\u0120Rock|\u0120bank|\u0120had|\u0120been|\u0120national|ised|\u0120in|\u0120|200|8|\u0120following|\u0120the|\u0120revel|ation|\u0120that|\u0120the|\u0120company|\u0120had|\u0120received|\u0120emergency|\u0120support|\u0120from|\u0120the|\u0120UK|\u0120Government|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Northern Rock had required support due to its exposure during the subprime mortgage crisis in 2007.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "N|orthern|\u0120Rock|\u0120had|\u0120required|\u0120support|\u0120due|\u0120to|\u0120its|\u0120exposure|\u0120during|\u0120the|\u0120sub|pr|ime|\u0120mortgage|\u0120crisis|\u0120in|\u0120|200|7|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Sir Richard Branson's Virgin Group had a bid for the bank rejected prior to the bank\u2019s nationalisation.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "S|ir|\u0120Richard|\u0120Br|ans|on|'s|\u0120Virgin|\u0120Group|\u0120had|\u0120a|\u0120bid|\u0120for|\u0120the|\u0120bank|\u0120reject|ed|\u0120prior|\u0120to|\u0120the|\u0120bank|\u00e2\u0122\u013bs|\u0120national|isation|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "In 2010, while nationalised, the current high street bank Northern Rock plc was split from the \u2018bad bank\u2019, Northern Rock (Asset Management).": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "In|\u0120|201|0|,|\u0120while|\u0120national|ised|,|\u0120the|\u0120current|\u0120high|\u0120street|\u0120bank|\u0120Northern|\u0120Rock|\u0120pl|c|\u0120was|\u0120split|\u0120from|\u0120the|\u0120\u00e2\u0122\u013a|b|ad|\u0120bank|\u00e2\u0122\u013b,|\u0120Northern|\u0120Rock|\u0120(|As|set|\u0120Management|).": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Virgin have only purchased the \u2018good bank\u2019 of Northern Rock, not the asset management company.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "V|ir|gin|\u0120have|\u0120only|\u0120purchased|\u0120the|\u0120\u00e2\u0122\u013a|go|od|\u0120bank|\u00e2\u0122\u013b|\u0120of|\u0120Northern|\u0120Rock|,|\u0120not|\u0120the|\u0120ass|et|\u0120management|\u0120company|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "This is believed to be the fifth time in history that people have observed what turned out to be chemically confirmed martian material falling to Earth.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "This|\u0120is|\u0120believed|\u0120to|\u0120be|\u0120the|\u0120fifth|\u0120time|\u0120in|\u0120history|\u0120that|\u0120people|\u0120have|\u0120observed|\u0120what|\u0120turned|\u0120out|\u0120to|\u0120be|\u0120chem|ically|\u0120confirmed|\u0120mart|ian|\u0120material|\u0120falling|\u0120to|\u0120Earth|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Out of the approximately 24,000 known meteorites to have fallen to Earth, only about 34 have been verified to be martian in origin.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Out|\u0120of|\u0120the|\u0120approximately|\u0120|24|,|000|\u0120known|\u0120mete|or|ites|\u0120to|\u0120have|\u0120fall|en|\u0120to|\u0120Earth|,|\u0120only|\u0120about|\u0120|34|\u0120have|\u0120been|\u0120ver|ified|\u0120to|\u0120be|\u0120mart|ian|\u0120in|\u0120origin|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Fifteen of these rocks are attributed to the meteorite shower last July.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "F|if|teen|\u0120of|\u0120these|\u0120ro|cks|\u0120are|\u0120attrib|uted|\u0120to|\u0120the|\u0120mete|or|ite|\u0120shower|\u0120last|\u0120July|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Some of the rocks, which are very rare on Earth, are being sold from US$11,000 to $22,500 per ounce, which is about ten times more than the cost of gold.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Some|\u0120of|\u0120the|\u0120ro|cks|,|\u0120which|\u0120are|\u0120very|\u0120rare|\u0120on|\u0120Earth|,|\u0120are|\u0120being|\u0120sold|\u0120from|\u0120US|$|11|,|000|\u0120to|\u0120$|22|,|500|\u0120per|\u0120o|unce|,|\u0120which|\u0120is|\u0120about|\u0120ten|\u0120times|\u0120more|\u0120than|\u0120the|\u0120cost|\u0120of|\u0120gold|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Following the race, Keselowski remains the Drivers' Championship leader with 2,250 points.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Follow|ing|\u0120the|\u0120race|,|\u0120K|es|el|ows|ki|\u0120remains|\u0120the|\u0120Dr|ivers|'|\u0120Championship|\u0120leader|\u0120with|\u0120|2|,|250|\u0120points|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Seven points behind, Johnson is second with 2,243.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Se|ven|\u0120points|\u0120behind|,|\u0120Johnson|\u0120is|\u0120second|\u0120with|\u0120|2|,|24|3|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "In third, Hamlin is twenty points behind, but five ahead of Bowyer. Kahne and Truex, Jr. are fifth and sixth respectively with 2,220 and 2,207 points.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "In|\u0120third|,|\u0120Ham|lin|\u0120is|\u0120twenty|\u0120points|\u0120behind|,|\u0120but|\u0120five|\u0120ahead|\u0120of|\u0120Bow|yer|.|\u0120K|ah|ne|\u0120and|\u0120True|x|,|\u0120Jr|.|\u0120are|\u0120fifth|\u0120and|\u0120sixth|\u0120respectively|\u0120with|\u0120|2|,|220|\u0120and|\u0120|2|,|207|\u0120points|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Stewart, Gordon, Kenseth, and Harvick round out the top-ten positions for the Drivers' Championship with four races remaining in the season.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Ste|wart|,|\u0120Gordon|,|\u0120K|ens|eth|,|\u0120and|\u0120Har|v|ick|\u0120round|\u0120out|\u0120the|\u0120top|-|ten|\u0120positions|\u0120for|\u0120the|\u0120Dr|ivers|'|\u0120Championship|\u0120with|\u0120four|\u0120races|\u0120remaining|\u0120in|\u0120the|\u0120season|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The US Navy also said they were investigating the incident.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120US|\u0120Navy|\u0120also|\u0120said|\u0120they|\u0120were|\u0120investig|ating|\u0120the|\u0120incident|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "They also said in a statement, \"The crew is currently working to determine the best method of safely extracting the ship\".": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "They|\u0120also|\u0120said|\u0120in|\u0120a|\u0120statement|,|\u0120\"|The|\u0120crew|\u0120is|\u0120currently|\u0120working|\u0120to|\u0120determine|\u0120the|\u0120best|\u0120method|\u0120of|\u0120saf|ely|\u0120extract|ing|\u0120the|\u0120ship|\".": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "An Avenger class mine countermeasures ship, the ship was on its way to Puerto Princesa in Palawan.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "An|\u0120A|ven|ger|\u0120class|\u0120mine|\u0120counter|me|as|ures|\u0120ship|,|\u0120the|\u0120ship|\u0120was|\u0120on|\u0120its|\u0120way|\u0120to|\u0120Puerto|\u0120Prin|cesa|\u0120in|\u0120P|ala|wan|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "It is assigned to the U.S. Navy\u2019s Seventh Fleet and based in Sasebo, Nagasaki in Japan.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "It|\u0120is|\u0120assigned|\u0120to|\u0120the|\u0120U|.S|.|\u0120Navy|\u00e2\u0122\u013bs|\u0120Se|venth|\u0120Fle|et|\u0120and|\u0120based|\u0120in|\u0120S|ase|bo|,|\u0120N|agas|aki|\u0120in|\u0120Japan|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The Mumbai attackers arrived via boat on Novemeber 26, 2008, bringing with them grenades, automatic weapons and hit multiple targets including the crowded Chhatrapati Shivaji Terminus railway station and the famous Taj Mahal Hotel.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120M|umbai|\u0120attack|ers|\u0120arrived|\u0120via|\u0120boat|\u0120on|\u0120Nov|eme|ber|\u0120|26|,|\u0120|200|8|,|\u0120bringing|\u0120with|\u0120them|\u0120gr|en|ades|,|\u0120automatic|\u0120weapons|\u0120and|\u0120hit|\u0120multiple|\u0120targets|\u0120including|\u0120the|\u0120crow|ded|\u0120Ch|h|at|rap|ati|\u0120Sh|iv|aj|i|\u0120Ter|min|us|\u0120rail|way|\u0120station|\u0120and|\u0120the|\u0120famous|\u0120T|aj|\u0120Mah|al|\u0120Hotel|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "David Headley's scouting and information gathering had helped to enable the operation by the 10 gunmen from the Pakistani militant group Laskhar-e-Taiba.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "David|\u0120Head|ley|'s|\u0120sc|out|ing|\u0120and|\u0120information|\u0120gather|ing|\u0120had|\u0120helped|\u0120to|\u0120enable|\u0120the|\u0120operation|\u0120by|\u0120the|\u0120|10|\u0120gun|men|\u0120from|\u0120the|\u0120Pak|ist|ani|\u0120milit|ant|\u0120group|\u0120Las|k|har|-e|-T|a|ib|a|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The attack put a huge strain on relations between India and Pakistan.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120attack|\u0120put|\u0120a|\u0120huge|\u0120stra|in|\u0120on|\u0120relations|\u0120between|\u0120India|\u0120and|\u0120Pakistan|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Accompanied by those officials, he assured Texas citizens that steps were being taken to protect the public's safety.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Ac|com|pan|ied|\u0120by|\u0120those|\u0120officials|,|\u0120he|\u0120ass|ured|\u0120Texas|\u0120citizens|\u0120that|\u0120steps|\u0120were|\u0120being|\u0120taken|\u0120to|\u0120protect|\u0120the|\u0120public|'s|\u0120safety|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Perry specifically said, \"There are few places in the world better equipped to meet the challenge that is posed in this case.\"": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "P|erry|\u0120specifically|\u0120said|,|\u0120\"|There|\u0120are|\u0120few|\u0120places|\u0120in|\u0120the|\u0120world|\u0120better|\u0120equipped|\u0120to|\u0120meet|\u0120the|\u0120challenge|\u0120that|\u0120is|\u0120pos|ed|\u0120in|\u0120this|\u0120case|.\"": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The governor also stated, \"Today, we learned that some school aged children have been identified as having had contact with the patient.\"": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120governor|\u0120also|\u0120stated|,|\u0120\"|Today|,|\u0120we|\u0120learned|\u0120that|\u0120some|\u0120school|\u0120ag|ed|\u0120children|\u0120have|\u0120been|\u0120identified|\u0120as|\u0120having|\u0120had|\u0120contact|\u0120with|\u0120the|\u0120patient|.\"": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "He went on to say, \"This case is serious. Rest assured that our system is working as well as it should.\"": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "He|\u0120went|\u0120on|\u0120to|\u0120say|,|\u0120\"|This|\u0120case|\u0120is|\u0120serious|.|\u0120Rest|\u0120ass|ured|\u0120that|\u0120our|\u0120system|\u0120is|\u0120working|\u0120as|\u0120well|\u0120as|\u0120it|\u0120should|.\"": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "If confirmed, the find completes Allen's eight-year search for the Musashi.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "If|\u0120confirmed|,|\u0120the|\u0120find|\u0120comple|tes|\u0120Allen|'s|\u0120eight|-year|\u0120search|\u0120for|\u0120the|\u0120Mus|ashi|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Following seabed mapping the wreck was found using an ROV.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Follow|ing|\u0120se|ab|ed|\u0120map|ping|\u0120the|\u0120w|re|ck|\u0120was|\u0120found|\u0120using|\u0120an|\u0120R|OV|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "One of the world's richest people, Allen has reportedly invested much of his wealth in marine exploration and began his quest to find the Musashi out of a lifelong interest in the war.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "One|\u0120of|\u0120the|\u0120world|'s|\u0120rich|est|\u0120people|,|\u0120Allen|\u0120has|\u0120reported|ly|\u0120invest|ed|\u0120much|\u0120of|\u0120his|\u0120wealth|\u0120in|\u0120mar|ine|\u0120explor|ation|\u0120and|\u0120began|\u0120his|\u0120quest|\u0120to|\u0120find|\u0120the|\u0120Mus|ashi|\u0120out|\u0120of|\u0120a|\u0120lif|el|ong|\u0120interest|\u0120in|\u0120the|\u0120war|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "She gained critical acclaim during her time in Atlanta and was recognized for innovative urban education.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "She|\u0120gained|\u0120critical|\u0120ac|claim|\u0120during|\u0120her|\u0120time|\u0120in|\u0120Atlanta|\u0120and|\u0120was|\u0120recognized|\u0120for|\u0120innovative|\u0120urban|\u0120education|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "In 2009 she was awarded the title of National Superintendent of the Year.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "In|\u0120|200|9|\u0120she|\u0120was|\u0120awarded|\u0120the|\u0120title|\u0120of|\u0120National|\u0120Super|intend|ent|\u0120of|\u0120the|\u0120Year|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "At the time of the award, Atlanta schools had seen a large improvement on test scores.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "At|\u0120the|\u0120time|\u0120of|\u0120the|\u0120award|,|\u0120Atlanta|\u0120schools|\u0120had|\u0120seen|\u0120a|\u0120large|\u0120improvement|\u0120on|\u0120test|\u0120scores|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Shortly after, The Atlanta Journal-Constitution published a report showing problems with test results.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Sh|ort|ly|\u0120after|,|\u0120The|\u0120Atlanta|\u0120Journal|-|Con|st|itution|\u0120published|\u0120a|\u0120report|\u0120showing|\u0120problems|\u0120with|\u0120test|\u0120results|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The report showed test scores had increased implausibly fast, and alleged the school internally detected problems but didn't act on the findings.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120report|\u0120showed|\u0120test|\u0120scores|\u0120had|\u0120increased|\u0120imp|la|us|ibly|\u0120fast|,|\u0120and|\u0120alleged|\u0120the|\u0120school|\u0120intern|ally|\u0120detect|ed|\u0120problems|\u0120but|\u0120didn|'t|\u0120act|\u0120on|\u0120the|\u0120findings|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Evidence thereafter indicated test papers were tampered with Hall, along with 34 other education officials, was indicted in 2013.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "E|vid|ence|\u0120there|after|\u0120indicated|\u0120test|\u0120papers|\u0120were|\u0120t|am|per|ed|\u0120with|\u0120Hall|,|\u0120along|\u0120with|\u0120|34|\u0120other|\u0120education|\u0120officials|,|\u0120was|\u0120ind|icted|\u0120in|\u0120|201|3|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The Irish government is stressing the urgency of parliamentary legislation to rectify the situation.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120Irish|\u0120government|\u0120is|\u0120stress|ing|\u0120the|\u0120ur|gency|\u0120of|\u0120par|liament|ary|\u0120legislation|\u0120to|\u0120rect|ify|\u0120the|\u0120situation|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "\"It is now important from both a public health and criminal justice perspective that the legislation be enacted as soon as possible\", said a government spokesperson.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "\"It|\u0120is|\u0120now|\u0120important|\u0120from|\u0120both|\u0120a|\u0120public|\u0120health|\u0120and|\u0120criminal|\u0120justice|\u0120perspective|\u0120that|\u0120the|\u0120legislation|\u0120be|\u0120en|act|ed|\u0120as|\u0120soon|\u0120as|\u0120possible|\",|\u0120said|\u0120a|\u0120government|\u0120spokes|person|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The Health Minister expressed concern both for the welfare of individuals taking advantage of the temporary legality of the substances involved, and for drug-related convictions handed down since the now-unconstitutional changes came into effect.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120Health|\u0120Minister|\u0120expressed|\u0120concern|\u0120both|\u0120for|\u0120the|\u0120w|elfare|\u0120of|\u0120individuals|\u0120taking|\u0120advantage|\u0120of|\u0120the|\u0120temporary|\u0120leg|ality|\u0120of|\u0120the|\u0120subst|ances|\u0120involved|,|\u0120and|\u0120for|\u0120drug|-related|\u0120conv|ict|ions|\u0120hand|ed|\u0120down|\u0120since|\u0120the|\u0120now|-|un|con|st|itut|ional|\u0120changes|\u0120came|\u0120into|\u0120effect|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Jarque was practicing during pre-season training at Coverciano in Italy earlier in the day. He was staying in the team hotel ahead of a match planned for Sunday against Bolonia.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "J|ar|que|\u0120was|\u0120pract|icing|\u0120during|\u0120pre|-se|ason|\u0120training|\u0120at|\u0120Co|ver|ci|ano|\u0120in|\u0120Italy|\u0120earlier|\u0120in|\u0120the|\u0120day|.|\u0120He|\u0120was|\u0120staying|\u0120in|\u0120the|\u0120team|\u0120hotel|\u0120ahead|\u0120of|\u0120a|\u0120match|\u0120planned|\u0120for|\u0120Sunday|\u0120against|\u0120Bol|onia|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "He was staying in the team hotel ahead of a match planned for Sunday against Bolonia.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "He|\u0120was|\u0120staying|\u0120in|\u0120the|\u0120team|\u0120hotel|\u0120ahead|\u0120of|\u0120a|\u0120match|\u0120planned|\u0120for|\u0120Sunday|\u0120against|\u0120Bol|onia|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The bus was headed to Six Flags St. Louis in Missouri for the band to play to a sold-out crowd.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120bus|\u0120was|\u0120headed|\u0120to|\u0120Six|\u0120Fl|ags|\u0120St|.|\u0120Louis|\u0120in|\u0120Missouri|\u0120for|\u0120the|\u0120band|\u0120to|\u0120play|\u0120to|\u0120a|\u0120sold|-out|\u0120crowd|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "At 1:15 a.m. Saturday, according to witnesses, the bus was going through a green light when the car made a turn in front of it.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "At|\u0120|1|:|15|\u0120a|.m|.|\u0120Saturday|,|\u0120according|\u0120to|\u0120witness|es|,|\u0120the|\u0120bus|\u0120was|\u0120going|\u0120through|\u0120a|\u0120green|\u0120light|\u0120when|\u0120the|\u0120car|\u0120made|\u0120a|\u0120turn|\u0120in|\u0120front|\u0120of|\u0120it|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "As of the night of August 9, the eye of Morakot was about seventy kilometres away from the Chinese province of Fujian.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "As|\u0120of|\u0120the|\u0120night|\u0120of|\u0120August|\u0120|9|,|\u0120the|\u0120eye|\u0120of|\u0120Mor|ak|ot|\u0120was|\u0120about|\u0120se|vent|y|\u0120kil|omet|res|\u0120away|\u0120from|\u0120the|\u0120Chinese|\u0120provin|ce|\u0120of|\u0120F|uj|ian|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The typhoon is estimated to be moving toward China at eleven kph.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120ty|ph|o|on|\u0120is|\u0120estimated|\u0120to|\u0120be|\u0120moving|\u0120toward|\u0120China|\u0120at|\u0120ele|ven|\u0120k|ph|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Passengers were given water as they waited in 90(F)-degree heat.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "P|ass|engers|\u0120were|\u0120given|\u0120water|\u0120as|\u0120they|\u0120wa|ited|\u0120in|\u0120|90|(|F|)-|de|g|ree|\u0120heat|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Fire captain Scott Kouns said, \"It was a hot day in the Santa Clara with temperatures in the 90s.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "F|ire|\u0120captain|\u0120Scott|\u0120Ko|uns|\u0120said|,|\u0120\"|It|\u0120was|\u0120a|\u0120hot|\u0120day|\u0120in|\u0120the|\u0120Santa|\u0120Cl|ara|\u0120with|\u0120temperatures|\u0120in|\u0120the|\u0120|90|s|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Any length of time trapped on a roller coaster would be uncomfortable, to say the least, and it took at least an hour to get the first person off the ride.\"": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Any|\u0120length|\u0120of|\u0120time|\u0120tra|pped|\u0120on|\u0120a|\u0120roll|er|\u0120co|aster|\u0120would|\u0120be|\u0120uncom|fort|able|,|\u0120to|\u0120say|\u0120the|\u0120least|,|\u0120and|\u0120it|\u0120took|\u0120at|\u0120least|\u0120an|\u0120hour|\u0120to|\u0120get|\u0120the|\u0120first|\u0120person|\u0120off|\u0120the|\u0120ride|.\"": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Schumacher who retired in 2006 after winning the Formula 1 championship seven times, was due to replace the injured Felipe Massa.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "S|ch|um|acher|\u0120who|\u0120retired|\u0120in|\u0120|200|6|\u0120after|\u0120winning|\u0120the|\u0120Form|ula|\u0120|1|\u0120championship|\u0120seven|\u0120times|,|\u0120was|\u0120due|\u0120to|\u0120replace|\u0120the|\u0120injured|\u0120Felipe|\u0120Mass|a|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The Brazilian suffered a serious head injury after a crash during the 2009 Hungarian Grand Prix.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120Brazil|ian|\u0120suffered|\u0120a|\u0120serious|\u0120head|\u0120injury|\u0120after|\u0120a|\u0120crash|\u0120during|\u0120the|\u0120|200|9|\u0120H|un|gar|ian|\u0120Grand|\u0120Pr|ix|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Massa is due to be out for at least the rest of the 2009 season.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "M|ass|a|\u0120is|\u0120due|\u0120to|\u0120be|\u0120out|\u0120for|\u0120at|\u0120least|\u0120the|\u0120rest|\u0120of|\u0120the|\u0120|200|9|\u0120season|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Arias tested positive for a mild case of the virus, Presidential Minister Rodrigo Arias said.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Ar|ias|\u0120tested|\u0120positive|\u0120for|\u0120a|\u0120m|ild|\u0120case|\u0120of|\u0120the|\u0120virus|,|\u0120President|ial|\u0120Minister|\u0120Rodr|igo|\u0120Ar|ias|\u0120said|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The president's condition is stable, though he will be isolated at home for several days.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120president|'s|\u0120condition|\u0120is|\u0120stable|,|\u0120though|\u0120he|\u0120will|\u0120be|\u0120isol|ated|\u0120at|\u0120home|\u0120for|\u0120several|\u0120days|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "\"Apart from the fever and a sore throat, I feel well and in good shape to carry out my work by telecommuting.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "\"|Ap|art|\u0120from|\u0120the|\u0120fe|ver|\u0120and|\u0120a|\u0120s|ore|\u0120thro|at|,|\u0120I|\u0120feel|\u0120well|\u0120and|\u0120in|\u0120good|\u0120shape|\u0120to|\u0120carry|\u0120out|\u0120my|\u0120work|\u0120by|\u0120tele|comm|uting|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "I expect to return to all my duties on Monday,\" Arias said in a statement.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "I|\u0120expect|\u0120to|\u0120return|\u0120to|\u0120all|\u0120my|\u0120duties|\u0120on|\u0120Monday|,\"|\u0120Ar|ias|\u0120said|\u0120in|\u0120a|\u0120statement|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  }
+}

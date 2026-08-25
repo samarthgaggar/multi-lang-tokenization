@@ -1,0 +1,50 @@
+{
+  "On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "On|\u0120Monday|,|\u0120scientists|\u0120from|\u0120the|\u0120Stan|ford|\u0120University|\u0120School|\u0120of|\u0120Medicine|\u0120announced|\u0120the|\u0120invention|\u0120of|\u0120a|\u0120new|\u0120diagnost|ic|\u0120tool|\u0120that|\u0120can|\u0120sort|\u0120cells|\u0120by|\u0120type|:|\u0120a|\u0120tiny|\u0120print|able|\u0120chip|\u0120that|\u0120can|\u0120be|\u0120manufact|ured|\u0120using|\u0120standard|\u0120in|k|jet|\u0120print|ers|\u0120for|\u0120possibly|\u0120about|\u0120one|\u0120U|.S|.|\u0120cent|\u0120each|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "L|ead|\u0120researchers|\u0120say|\u0120this|\u0120may|\u0120bring|\u0120early|\u0120dete|ction|\u0120of|\u0120cancer|,|\u0120tub|er|culos|is|,|\u0120HIV|\u0120and|\u0120mal|aria|\u0120to|\u0120patients|\u0120in|\u0120low|-in|come|\u0120countries|,|\u0120where|\u0120the|\u0120survival|\u0120rates|\u0120for|\u0120illness|es|\u0120such|\u0120as|\u0120breast|\u0120cancer|\u0120can|\u0120be|\u0120half|\u0120those|\u0120of|\u0120rich|er|\u0120countries|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "El lunes, los cient\u00edficos de la facultad de medicina de la Universidad de Stanford anunciaron el invento de una nueva herramienta de diagn\u00f3stico que puede catalogar las c\u00e9lulas seg\u00fan su tipo: un peque\u00f1\u00edsimo chip que se puede imprimir y fabricar con impresoras de inyecci\u00f3n de uso corriente, por un posible costo de, aproximadamente, un centavo de d\u00f3lar por cada uno.": {
+    "count": 1,
+    "langs": {
+      "es": 1
+    },
+    "bpe_signatures": {
+      "El|\u0120lunes|,|\u0120los|\u0120cient\u00c3\u0143ficos|\u0120de|\u0120la|\u0120facult|ad|\u0120de|\u0120medicina|\u0120de|\u0120la|\u0120Universidad|\u0120de|\u0120Stan|ford|\u0120anunci|aron|\u0120el|\u0120inv|ento|\u0120de|\u0120una|\u0120nueva|\u0120herramienta|\u0120de|\u0120diagn\u00c3\u00b3stico|\u0120que|\u0120puede|\u0120catalog|ar|\u0120las|\u0120c\u00c3\u00a9lulas|\u0120seg\u00c3\u00ban|\u0120su|\u0120tipo|:|\u0120un|\u0120peque|\u00c3\u00b1|\u00c3\u0143simo|\u0120chip|\u0120que|\u0120se|\u0120puede|\u0120im|primir|\u0120y|\u0120fabric|ar|\u0120con|\u0120impres|oras|\u0120de|\u0120in|yecci\u00c3\u00b3n|\u0120de|\u0120uso|\u0120corriente|,|\u0120por|\u0120un|\u0120posible|\u0120costo|\u0120de|,|\u0120aproximadamente|,|\u0120un|\u0120cent|av|o|\u0120de|\u0120d\u00c3\u00b3|lar|\u0120por|\u0120cada|\u0120uno|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Los principales investigadores principales sostienen que esto puede permitir la detecci\u00f3n precoz del c\u00e1ncer, la tuberculosis, el VIH y la malaria en pacientes de pa\u00edses de bajos recursos, donde la tasa de supervivencia de enfermedades como el c\u00e1ncer de mama puede ser la mitad de la de los pa\u00edses m\u00e1s avanzados.": {
+    "count": 1,
+    "langs": {
+      "es": 1
+    },
+    "bpe_signatures": {
+      "Los|\u0120principales|\u0120investigadores|\u0120principales|\u0120sost|ienen|\u0120que|\u0120esto|\u0120puede|\u0120permitir|\u0120la|\u0120dete|cci\u00c3\u00b3n|\u0120pre|co|z|\u0120del|\u0120c\u00c3\u00a1ncer|,|\u0120la|\u0120tub|er|culos|is|,|\u0120el|\u0120VI|H|\u0120y|\u0120la|\u0120mal|aria|\u0120en|\u0120pacientes|\u0120de|\u0120pa\u00c3\u0143ses|\u0120de|\u0120bajos|\u0120recursos|,|\u0120donde|\u0120la|\u0120tasa|\u0120de|\u0120superviv|encia|\u0120de|\u0120enfermedades|\u0120como|\u0120el|\u0120c\u00c3\u00a1ncer|\u0120de|\u0120m|ama|\u0120puede|\u0120ser|\u0120la|\u0120mitad|\u0120de|\u0120la|\u0120de|\u0120los|\u0120pa\u00c3\u0143ses|\u0120m\u00c3\u00a1s|\u0120avan|zados|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  }
+}

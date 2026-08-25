@@ -49,6 +49,7 @@ def parse_args():
     p.add_argument("--splits", type=str, default="dev,devtest", help="Comma-separated dataset splits to use")
     p.add_argument("--seed_repeats", type=int, default=3, help="Number of different seeds to run for stochastic consistency checks")
     p.add_argument("--max_examples_per_lang", type=int, default=0, help="If >0, limit per-language examples (useful for quick runs)")
+    p.add_argument("--batch_size", type=int, default=32, help="Batch size for batched FlexiTokens inference")
     return p.parse_args()
 
 
@@ -85,34 +86,17 @@ def load_fxt_model(model_path: str, device="cpu"):
     return model, tokenizer, config
 
 
-def fxt_tokenization_signature(model, tokenizer, text: str, lang: str, config: dict, seed: int = 42, device="cpu"):
-    # prepare input: tokenizer returns byte-level ids; prepend language script token id
-    encoded = tokenizer(text, add_special_tokens=False)
-    input_ids = encoded["input_ids"]
-    # map language to script token id using config["language_to_script"] and tokenizer
+def fxt_lang_script_token_id(tokenizer, config, lang: str):
     script_token = config["language_to_script"].get(lang)
-    # try resolve token id from tokenizer, else search id_to_script map
     token_id = tokenizer.convert_tokens_to_ids(script_token)
     if token_id is None or token_id == tokenizer.unk_token_id:
-        # fallback: find numeric key in config id_to_script
         id_to_script = {int(k): v for k, v in config.get("id_to_script", {}).items()}
         inv = {v: k for k, v in id_to_script.items()}
         token_id = int(inv[script_token])
+    return token_id
 
-    # batch with leading script token
-    batch = {
-        "input_ids": torch.tensor([[token_id, *input_ids]], device=device, dtype=torch.long),
-        "attention_mask": torch.ones((1, len(input_ids) + 1), device=device, dtype=torch.long),
-    }
-    torch.manual_seed(seed)
-    if torch.cuda.is_available() and device.startswith("cuda"):
-        torch.cuda.manual_seed_all(seed)
 
-    with torch.inference_mode():
-        _, stats, _ = model(batch, task="tokenization2")
-
-    hard = stats["hard_boundaries"][0, : len(input_ids)].detach().cpu().numpy()
-    # collect segments
+def _signature_from_hard_boundaries(tokenizer, input_ids, hard):
     segments = []
     current = []
     for token_id, is_boundary in zip(input_ids, hard):
@@ -122,11 +106,41 @@ def fxt_tokenization_signature(model, tokenizer, text: str, lang: str, config: d
             current = []
     if current:
         segments.append(tokenizer.decode(current))
+    return "|".join(s.replace(tokenizer.eos_token or "", "").strip() for s in segments)
 
-    # canonical signature: join with | and also provide token id sequences
-    signature = "|".join(s.replace(tokenizer.eos_token or "", "").strip() for s in segments)
-    token_ids_signature = tuple(tuple([int(x) for x in seg_ids]) if isinstance(seg_ids, (list, tuple)) else tuple() for seg_ids in [])
-    return signature
+
+def fxt_tokenization_signature_batch(model, tokenizer, texts, lang: str, config: dict, seed: int = 42, device="cpu"):
+    if not texts:
+        return []
+    token_id = fxt_lang_script_token_id(tokenizer, config, lang)
+    encoded = tokenizer(list(texts), add_special_tokens=False, padding=True, return_tensors="pt")
+    input_ids = encoded["input_ids"].to(device)
+    batch_input_ids = torch.cat(
+        [torch.full((input_ids.size(0), 1), token_id, device=device, dtype=input_ids.dtype), input_ids],
+        dim=1,
+    )
+    attention_mask = torch.ones((input_ids.size(0), batch_input_ids.size(1)), device=device, dtype=torch.long)
+
+    torch.manual_seed(seed)
+    if str(device).startswith("cuda") and torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+
+    with torch.inference_mode():
+        _, stats, _ = model({"input_ids": batch_input_ids, "attention_mask": attention_mask}, task="tokenization2")
+
+    hard = stats["hard_boundaries"].detach().cpu().numpy()
+    if hard.ndim == 1:
+        hard = hard[None, :]
+
+    signatures = []
+    for row, row_input_ids in zip(hard, input_ids.cpu().tolist()):
+        sig = _signature_from_hard_boundaries(tokenizer, row_input_ids, row[: len(row_input_ids)])
+        signatures.append(sig)
+    return signatures
+
+
+def fxt_tokenization_signature(model, tokenizer, text: str, lang: str, config: dict, seed: int = 42, device="cpu"):
+    return fxt_tokenization_signature_batch(model, tokenizer, [text], lang, config, seed=seed, device=device)[0]
 
 
 def bpe_tokenization_signature(bpe_tokenizer, text: str):
@@ -196,22 +210,27 @@ def main():
 
     # First pass: collect signatures (single-seed deterministic pass for both tokenizers)
     for lang, texts in corpus.items():
-        for text in texts:
-            norm = normalize_text(text)
-            vocab[norm]["count"] += 1
-            vocab[norm]["langs"][lang] += 1
-            # BPE signature
+        for i in range(0, len(texts), args.batch_size):
+            batch_texts = texts[i : i + args.batch_size]
+            for text in batch_texts:
+                norm = normalize_text(text)
+                vocab[norm]["count"] += 1
+                vocab[norm]["langs"][lang] += 1
+                # BPE signature
+                try:
+                    bpe_sig = bpe_tokenization_signature(bpe_tokenizer, norm)
+                except Exception:
+                    bpe_sig = "<ERROR>"
+                vocab[norm]["bpe_signatures"][bpe_sig] += 1
+
             try:
-                bpe_sig = bpe_tokenization_signature(bpe_tokenizer, norm)
+                fxt_batch_sigs = fxt_tokenization_signature_batch(model, fxt_tokenizer, [normalize_text(t) for t in batch_texts], lang, config, seed=42, device=device)
             except Exception:
-                bpe_sig = "<ERROR>"
-            vocab[norm]["bpe_signatures"][bpe_sig] += 1
-            # FlexiTokens signature (single seed)
-            try:
-                fxt_sig = fxt_tokenization_signature(model, fxt_tokenizer, norm, lang, config, seed=42, device=device)
-            except Exception:
-                fxt_sig = "<ERROR>"
-            vocab[norm]["fxt_signatures"][fxt_sig] += 1
+                fxt_batch_sigs = ["<ERROR>"] * len(batch_texts)
+
+            for text, fxt_sig in zip(batch_texts, fxt_batch_sigs):
+                norm = normalize_text(text)
+                vocab[norm]["fxt_signatures"][fxt_sig] += 1
 
     # Consistency/stochasticity checks for FlexiTokens across seeds
     seed_stats = {}
@@ -219,15 +238,17 @@ def main():
     for seed in seeds:
         print(f"Running stochastic pass seed={seed}")
         for lang, texts in corpus.items():
-            for text in texts:
-                norm = normalize_text(text)
+            for i in range(0, len(texts), args.batch_size):
+                batch_texts = texts[i : i + args.batch_size]
+                norms = [normalize_text(t) for t in batch_texts]
                 try:
-                    fxt_sig = fxt_tokenization_signature(model, fxt_tokenizer, norm, lang, config, seed=seed, device=device)
+                    fxt_batch_sigs = fxt_tokenization_signature_batch(model, fxt_tokenizer, norms, lang, config, seed=seed, device=device)
                 except Exception:
-                    fxt_sig = "<ERROR>"
+                    fxt_batch_sigs = ["<ERROR>"] * len(batch_texts)
                 key = f"seed_{seed}"
                 seed_stats.setdefault(key, Counter())
-                seed_stats[key][(norm, fxt_sig)] += 1
+                for norm, fxt_sig in zip(norms, fxt_batch_sigs):
+                    seed_stats[key][(norm, fxt_sig)] += 1
 
     # Compute per-normalized-string disagreement rate across seeds
     fxt_disagreement = {}

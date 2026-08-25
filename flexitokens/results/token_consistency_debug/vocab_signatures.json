@@ -1,0 +1,122 @@
+{
+  "On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "On|\u0120Monday|,|\u0120scientists|\u0120from|\u0120the|\u0120Stan|ford|\u0120University|\u0120School|\u0120of|\u0120Medicine|\u0120announced|\u0120the|\u0120invention|\u0120of|\u0120a|\u0120new|\u0120diagnost|ic|\u0120tool|\u0120that|\u0120can|\u0120sort|\u0120cells|\u0120by|\u0120type|:|\u0120a|\u0120tiny|\u0120print|able|\u0120chip|\u0120that|\u0120can|\u0120be|\u0120manufact|ured|\u0120using|\u0120standard|\u0120in|k|jet|\u0120print|ers|\u0120for|\u0120possibly|\u0120about|\u0120one|\u0120U|.S|.|\u0120cent|\u0120each|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "L|ead|\u0120researchers|\u0120say|\u0120this|\u0120may|\u0120bring|\u0120early|\u0120dete|ction|\u0120of|\u0120cancer|,|\u0120tub|er|culos|is|,|\u0120HIV|\u0120and|\u0120mal|aria|\u0120to|\u0120patients|\u0120in|\u0120low|-in|come|\u0120countries|,|\u0120where|\u0120the|\u0120survival|\u0120rates|\u0120for|\u0120illness|es|\u0120such|\u0120as|\u0120breast|\u0120cancer|\u0120can|\u0120be|\u0120half|\u0120those|\u0120of|\u0120rich|er|\u0120countries|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The JAS 39C Gripen crashed onto a runway at around 9:30 am local time (0230 UTC) and exploded, closing the airport to commercial flights.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120J|AS|\u0120|39|C|\u0120Gr|ip|en|\u0120crash|ed|\u0120onto|\u0120a|\u0120run|way|\u0120at|\u0120around|\u0120|9|:|30|\u0120am|\u0120local|\u0120time|\u0120(|0|23|0|\u0120U|TC|)|\u0120and|\u0120expl|od|ed|,|\u0120closing|\u0120the|\u0120airport|\u0120to|\u0120commercial|\u0120fl|ights|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The pilot was identified as Squadron Leader Dilokrit Pattavee.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120pilot|\u0120was|\u0120identified|\u0120as|\u0120Squ|ad|ron|\u0120Le|ader|\u0120D|il|ok|rit|\u0120Pat|ta|ve|e|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Local media reports an airport fire vehicle rolled over while responding.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "L|ocal|\u0120media|\u0120reports|\u0120an|\u0120airport|\u0120fire|\u0120vehicle|\u0120roll|ed|\u0120over|\u0120while|\u0120respon|ding|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "28-year-old Vidal had joined Bar\u00e7a three seasons ago, from Sevilla.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "28|-year|-old|\u0120V|idal|\u0120had|\u0120joined|\u0120Bar|\u00c3\u00a7a|\u0120three|\u0120seasons|\u0120ago|,|\u0120from|\u0120Sevilla|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Since moving to the Catalan-capital, Vidal had played 49 games for the club.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Since|\u0120moving|\u0120to|\u0120the|\u0120Catal|an|-c|ap|ital|,|\u0120V|idal|\u0120had|\u0120played|\u0120|49|\u0120games|\u0120for|\u0120the|\u0120club|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "The protest started around 11:00 local time (UTC+1) on Whitehall opposite the police-guarded entrance to Downing Street, the Prime Minister's official residence.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "The|\u0120protest|\u0120started|\u0120around|\u0120|11|:|00|\u0120local|\u0120time|\u0120(|UT|C|+|1|)|\u0120on|\u0120White|h|all|\u0120opposite|\u0120the|\u0120police|-|guard|ed|\u0120entrance|\u0120to|\u0120Down|ing|\u0120Street|,|\u0120the|\u0120Prime|\u0120Minister|'s|\u0120official|\u0120resid|ence|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "Just after 11:00, protesters blocked traffic on the northbound carriage in Whitehall.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "Just|\u0120after|\u0120|11|:|00|,|\u0120protest|ers|\u0120block|ed|\u0120traffic|\u0120on|\u0120the|\u0120north|bound|\u0120car|riage|\u0120in|\u0120White|h|all|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  },
+  "At 11:20, the police asked the protesters to move back on to the pavement, stating that they needed to balance the right to protest with the traffic building up.": {
+    "count": 1,
+    "langs": {
+      "en": 1
+    },
+    "bpe_signatures": {
+      "At|\u0120|11|:|20|,|\u0120the|\u0120police|\u0120asked|\u0120the|\u0120protest|ers|\u0120to|\u0120move|\u0120back|\u0120on|\u0120to|\u0120the|\u0120pav|ement|,|\u0120st|ating|\u0120that|\u0120they|\u0120needed|\u0120to|\u0120balance|\u0120the|\u0120right|\u0120to|\u0120protest|\u0120with|\u0120the|\u0120traffic|\u0120building|\u0120up|.": 1
+    },
+    "fxt_signatures": {
+      "<ERROR>": 1
+    }
+  }
+}
