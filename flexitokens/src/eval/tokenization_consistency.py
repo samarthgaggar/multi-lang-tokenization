@@ -25,9 +25,12 @@ from src.model.fxt import FxTTransformerLM
 
 
 FLORES_MAPPING = {
-    "en": "eng_Latn", "es": "spa_Latn", "fr": "fra_Latn",
-    "uk": "ukr_Cyrl", "ru": "rus_Cyrl", "be": "bel_Cyrl",
-    "hi": "hin_Deva", "bn": "ben_Beng", "te": "tel_Telu", "ur": "urd_Arab",
+    "en": "eng_Latn",
+    "es": "spa_Latn",
+    "ru": "rus_Cyrl",
+    "uk": "ukr_Cyrl",
+    "hi": "hin_Deva",
+    "te": "tel_Telu",
 }
 
 
