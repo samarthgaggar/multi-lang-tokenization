@@ -1,0 +1,2 @@
+language,total_sentences,unique_normalized_strings,normalization_collision_count,normalization_collision_percent,avg_bpe_signatures_per_string,avg_fxt_signatures_per_string,strings_with_fxt_seed_variation,percent_strings_with_fxt_seed_variation,seed_repeats,error_count
+en,2009,2009,0,0.0,1.0,4.5833748133399705,1999,99.50223992035838,5,0

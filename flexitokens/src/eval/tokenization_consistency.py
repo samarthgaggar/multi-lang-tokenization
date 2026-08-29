@@ -1,321 +1,366 @@
 #!/usr/bin/env python3
-"""
-Corpus-wide tokenization consistency analysis for FLORES and FlexiTokens/BPE.
+"""Reproducible FLORES tokenization-consistency analysis for BPE and FlexiTokens.
 
-Outputs JSON/CSV summaries reporting:
-- vocabulary size (normalized-string -> signatures)
-- per-language signature multiplicity and inconsistency rates
-- top ambiguous strings for manual inspection
-
-This script reuses the model and tokenizer loading conventions in the repo.
+Each normalized string is tokenized once by BPE and once for each requested
+FlexiTokens seed. Inference errors deliberately stop the run: an error token
+must never be mistaken for a valid tokenization signature.
 """
 import argparse
+import hashlib
 import json
-import math
 import os
-from collections import defaultdict, Counter
-from pathlib import Path
+import random
 import unicodedata
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import torch
-from datasets import load_dataset, DatasetDict, concatenate_datasets
+from datasets import load_dataset
 from transformers import AutoTokenizer
 
 from src.model.fxt import FxTTransformerLM
 
 
 FLORES_MAPPING = {
-    "en": "eng_Latn",
-    "es": "spa_Latn",
-    "fr": "fra_Latn",
-    "uk": "ukr_Cyrl",
-    "ru": "rus_Cyrl",
-    "be": "bel_Cyrl",
-    "hi": "hin_Deva",
-    "bn": "ben_Beng",
-    "te": "tel_Telu",
-    "ur": "urd_Arab",
+    "en": "eng_Latn", "es": "spa_Latn", "fr": "fra_Latn",
+    "uk": "ukr_Cyrl", "ru": "rus_Cyrl", "be": "bel_Cyrl",
+    "hi": "hin_Deva", "bn": "ben_Beng", "te": "tel_Telu", "ur": "urd_Arab",
 }
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Tokenization consistency analysis: FlexiTokens vs BPE on FLORES")
-    p.add_argument("--model_path", type=str, required=True, help="Path to FlexiTokens checkpoint directory (contains config.json and model.pth)")
-    p.add_argument("--bpe_tokenizer", type=str, default="data/bpe_tokenizer_50000", help="Path to BPE tokenizer folder")
-    p.add_argument("--output_dir", type=str, default="results/tokenization_consistency", help="Output directory for analysis artifacts")
-    p.add_argument("--languages", type=str, default="en,es,ru,uk,hi,te", help="Comma-separated 2-letter languages to analyze (subset of FLORES mapping)")
-    p.add_argument("--splits", type=str, default="dev,devtest", help="Comma-separated dataset splits to use")
-    p.add_argument("--seed_repeats", type=int, default=3, help="Number of different seeds to run for stochastic consistency checks")
-    p.add_argument("--max_examples_per_lang", type=int, default=0, help="If >0, limit per-language examples (useful for quick runs)")
-    p.add_argument("--batch_size", type=int, default=32, help="Batch size for batched FlexiTokens inference")
-    return p.parse_args()
+    parser = argparse.ArgumentParser(description="FLORES tokenization consistency: FlexiTokens vs BPE")
+    parser.add_argument("--model_path", required=True)
+    parser.add_argument("--bpe_tokenizer", required=True)
+    parser.add_argument("--output_dir", required=True)
+    parser.add_argument("--languages", default="en,es,ru,uk,hi,te")
+    parser.add_argument("--splits", default="dev,devtest")
+    parser.add_argument("--seed_repeats", type=int, default=5)
+    parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--max_examples_per_lang", type=int, default=0)
+    parser.add_argument("--dataset_source", default="yash9439/flores200")
+    parser.add_argument("--expected_sentences_per_lang", type=int, default=2009)
+    parser.add_argument(
+        "--length_bucketed",
+        action="store_true",
+        help="Batch normalized strings by encoded length to reduce padding; final result schema is unchanged.",
+    )
+    parser.add_argument(
+        "--clear_mps_cache_each_batch",
+        action="store_true",
+        help="Release unused MPS allocations after each batch without changing the evaluation protocol.",
+    )
+    return parser.parse_args()
 
 
-def normalize_text(s: str) -> str:
-    # Unicode normalize (NFKC), trim and collapse internal whitespace. Preserve case.
-    s = unicodedata.normalize("NFKC", s)
-    s = " ".join(s.strip().split())
-    return s
+def normalize_text(text: str) -> str:
+    """NFKC-normalize, trim, and collapse whitespace while preserving case."""
+    return " ".join(unicodedata.normalize("NFKC", text).strip().split())
 
 
-def load_fxt_model(model_path: str, device="cpu"):
+def choose_device():
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+        return torch.device("mps")
+    return torch.device("cpu")
+
+
+def set_seed(seed: int):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+
+
+def load_fxt_model(model_path: str, device: torch.device):
     model_path = Path(model_path)
     config = json.loads((model_path / "config.json").read_text())
-    # construct model with config fields required by constructor
-    # mirror notebook loader: select constructor args present in config
     import inspect
 
-    parameters = inspect.signature(FxTTransformerLM.__init__).parameters
-    kwargs = {name: config[name] for name in parameters if name != "self" and name in config}
+    params = inspect.signature(FxTTransformerLM.__init__).parameters
+    kwargs = {name: config[name] for name in params if name != "self" and name in config}
     model = FxTTransformerLM(**kwargs)
-
     checkpoint = torch.load(model_path / "model.pth", map_location="cpu")
     state = checkpoint.get("model", checkpoint)
     try:
         model.load_state_dict(state, assign=True)
-    except TypeError:
+    except TypeError:  # compatibility with older PyTorch versions
         model.load_state_dict(state)
-    # ensure device is a torch.device
-    device_obj = torch.device(device)
-    model.to(device_obj).eval()
-
+    model.to(device).eval()
     tokenizer = AutoTokenizer.from_pretrained(str(model_path), local_files_only=True)
-
     return model, tokenizer, config
 
 
-def fxt_lang_script_token_id(tokenizer, config, lang: str):
-    script_token = config["language_to_script"].get(lang)
+def language_token_id(tokenizer, config: dict, language: str) -> int:
+    script_token = config.get("language_to_script", {}).get(language)
+    if script_token is None:
+        supported = ", ".join(sorted(config.get("language_to_script", {})))
+        raise ValueError(f"Checkpoint does not support language '{language}'. Supported: {supported}")
     token_id = tokenizer.convert_tokens_to_ids(script_token)
     if token_id is None or token_id == tokenizer.unk_token_id:
-        id_to_script = {int(k): v for k, v in config.get("id_to_script", {}).items()}
-        inv = {v: k for k, v in id_to_script.items()}
-        token_id = int(inv[script_token])
-    return token_id
+        id_to_script = {int(key): value for key, value in config.get("id_to_script", {}).items()}
+        inverse = {value: key for key, value in id_to_script.items()}
+        if script_token not in inverse:
+            raise ValueError(f"No token id exists for checkpoint language token '{script_token}'")
+        token_id = inverse[script_token]
+    return int(token_id)
 
 
-def _signature_from_hard_boundaries(tokenizer, input_ids, hard):
-    segments = []
-    current = []
-    for token_id, is_boundary in zip(input_ids, hard):
-        current.append(token_id)
+def signature_from_boundaries(tokenizer, input_ids, boundaries) -> str:
+    """Build a signature from valid, unpadded token IDs and matching boundaries."""
+    if len(input_ids) != len(boundaries):
+        raise ValueError(f"Token/boundary length mismatch: {len(input_ids)} != {len(boundaries)}")
+    segments, current = [], []
+    for token_id, is_boundary in zip(input_ids, boundaries):
+        current.append(int(token_id))
         if int(is_boundary) == 1:
-            segments.append(tokenizer.decode(current))
+            segments.append(tokenizer.decode(current, skip_special_tokens=False))
             current = []
     if current:
-        segments.append(tokenizer.decode(current))
-    return "|".join(s.replace(tokenizer.eos_token or "", "").strip() for s in segments)
+        segments.append(tokenizer.decode(current, skip_special_tokens=False))
+    eos = tokenizer.eos_token or ""
+    return "|".join(segment.replace(eos, "").strip() for segment in segments)
 
 
-def fxt_tokenization_signature_batch(model, tokenizer, texts, lang: str, config: dict, seed: int = 42, device="cpu"):
+def fxt_signatures_for_batch(model, tokenizer, texts, language, config, device):
     if not texts:
         return []
-    token_id = fxt_lang_script_token_id(tokenizer, config, lang)
-    encoded = tokenizer(list(texts), add_special_tokens=False, padding=True, return_tensors="pt")
-    input_ids = encoded["input_ids"].to(device)
-    batch_input_ids = torch.cat(
-        [torch.full((input_ids.size(0), 1), token_id, device=device, dtype=input_ids.dtype), input_ids],
-        dim=1,
-    )
-    attention_mask = torch.ones((input_ids.size(0), batch_input_ids.size(1)), device=device, dtype=torch.long)
-
-    torch.manual_seed(seed)
-    if str(device).startswith("cuda") and torch.cuda.is_available():
-        torch.cuda.manual_seed_all(seed)
-
+    script_id = language_token_id(tokenizer, config, language)
+    encoded = tokenizer(texts, add_special_tokens=False, padding=True, return_attention_mask=True, return_tensors="pt")
+    raw_input_ids = encoded["input_ids"]
+    raw_attention_mask = encoded["attention_mask"]
+    model_input_ids = torch.cat(
+        [torch.full((raw_input_ids.size(0), 1), script_id, dtype=raw_input_ids.dtype), raw_input_ids], dim=1
+    ).to(device)
+    # The model removes the language token internally, so its mask must align
+    # with the unprefixed tokens rather than model_input_ids.
+    model_attention_mask = raw_attention_mask.to(device)
     with torch.inference_mode():
-        _, stats, _ = model({"input_ids": batch_input_ids, "attention_mask": attention_mask}, task="tokenization2")
-
-    hard = stats["hard_boundaries"].detach().cpu().numpy()
-    if hard.ndim == 1:
-        hard = hard[None, :]
-
+        _, stats, _ = model({"input_ids": model_input_ids, "attention_mask": model_attention_mask}, task="tokenization2")
+    hard_boundaries = stats["hard_boundaries"].detach().cpu().numpy()
     signatures = []
-    for row, row_input_ids in zip(hard, input_ids.cpu().tolist()):
-        sig = _signature_from_hard_boundaries(tokenizer, row_input_ids, row[: len(row_input_ids)])
-        signatures.append(sig)
+    for ids, mask, boundaries in zip(raw_input_ids.tolist(), raw_attention_mask.tolist(), hard_boundaries):
+        valid_length = int(sum(mask))
+        signatures.append(signature_from_boundaries(tokenizer, ids[:valid_length], boundaries[:valid_length]))
     return signatures
 
 
-def fxt_tokenization_signature(model, tokenizer, text: str, lang: str, config: dict, seed: int = 42, device="cpu"):
-    return fxt_tokenization_signature_batch(model, tokenizer, [text], lang, config, seed=seed, device=device)[0]
+def bpe_signature(tokenizer, text: str) -> str:
+    encoded = tokenizer(text, add_special_tokens=False)
+    return "|".join(tokenizer.convert_ids_to_tokens(encoded["input_ids"]))
 
 
-def bpe_tokenization_signature(bpe_tokenizer, text: str):
-    enc = bpe_tokenizer(text, add_special_tokens=False)
-    pieces = bpe_tokenizer.convert_ids_to_tokens(enc["input_ids"])
-    signature = "|".join(pieces)
-    return signature
+def load_language_texts(language, splits, dataset_source):
+    column = FLORES_MAPPING.get(language)
+    if column is None:
+        raise KeyError(f"Unknown FLORES language code: {language}")
+    texts, fingerprints = [], {}
+    for split in splits:
+        dataset = load_dataset(dataset_source, split=split)
+        if column not in dataset.column_names:
+            raise RuntimeError(f"Dataset {dataset_source} split {split} lacks column {column}")
+        texts.extend(dataset[column])
+        fingerprints[split] = getattr(dataset, "_fingerprint", None)
+    return texts, fingerprints
+
+
+def atomic_json_dump(payload, path: Path):
+    temporary_path = path.with_suffix(path.suffix + ".tmp")
+    with temporary_path.open("w") as handle:
+        json.dump(payload, handle, ensure_ascii=False)
+    os.replace(temporary_path, path)
+
+
+def checkpoint_path(output_dir: Path, seed: int) -> Path:
+    return output_dir / ".seed_checkpoints" / f"seed_{seed}.json"
+
+
+def sequence_fingerprint(texts) -> str:
+    digest = hashlib.sha256()
+    for text in texts:
+        digest.update(text.encode("utf-8"))
+        digest.update(b"\0")
+    return digest.hexdigest()
+
+
+def load_seed_checkpoint(output_dir: Path, language: str, seed: int, texts, batching_strategy: str):
+    path = checkpoint_path(output_dir, seed)
+    if not path.is_file():
+        return None
+    with path.open() as handle:
+        payload = json.load(handle)
+    signatures = payload.get("signatures")
+    if (
+        payload.get("language") != language
+        or payload.get("seed") != seed
+        or payload.get("batching_strategy") != batching_strategy
+        or payload.get("order_fingerprint") != sequence_fingerprint(texts)
+        or not isinstance(signatures, dict)
+    ):
+        raise RuntimeError(f"Invalid checkpoint metadata in {path}")
+    if set(signatures) != set(texts):
+        raise RuntimeError(f"Checkpoint {path} does not match the current normalized vocabulary")
+    return signatures
+
+
+def save_seed_checkpoint(output_dir: Path, language: str, seed: int, signatures: dict, inference_texts, batching_strategy: str):
+    path = checkpoint_path(output_dir, seed)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    atomic_json_dump({
+        "language": language,
+        "seed": seed,
+        "batching_strategy": batching_strategy,
+        "order_fingerprint": sequence_fingerprint(inference_texts),
+        "signatures": signatures,
+    }, path)
+
+
+def length_bucketed_texts(tokenizer, texts):
+    lengths = {
+        text: len(tokenizer(text, add_special_tokens=False)["input_ids"])
+        for text in texts
+    }
+    return sorted(texts, key=lambda text: (lengths[text], text))
+
+
+def analyze_language(
+    model, fxt_tokenizer, bpe_tokenizer, config, language, texts, seeds, batch_size,
+    device, output_dir, length_bucketed, clear_mps_cache_each_batch,
+):
+    normalized_counts = Counter(normalize_text(text) for text in texts)
+    if "" in normalized_counts:
+        raise ValueError(f"{language} contains an empty normalized string")
+    normalized_texts = list(normalized_counts)
+    bpe_signatures = {text: bpe_signature(bpe_tokenizer, text) for text in normalized_texts}
+    inference_texts = length_bucketed_texts(fxt_tokenizer, normalized_texts) if length_bucketed else normalized_texts
+    batching_strategy = "length_bucketed" if length_bucketed else "dataset_order"
+    seed_signatures = {}
+    for seed in seeds:
+        restored = load_seed_checkpoint(output_dir, language, seed, inference_texts, batching_strategy)
+        if restored is not None:
+            print(f"{language}: restored checkpoint for seed={seed}", flush=True)
+            seed_signatures[seed] = restored
+            continue
+        print(f"{language}: FlexiTokens seed={seed}", flush=True)
+        set_seed(seed)
+        signatures = []
+        for start in range(0, len(inference_texts), batch_size):
+            signatures.extend(fxt_signatures_for_batch(
+                model, fxt_tokenizer, inference_texts[start:start + batch_size], language, config, device
+            ))
+            if clear_mps_cache_each_batch and device.type == "mps":
+                torch.mps.empty_cache()
+        if len(signatures) != len(inference_texts):
+            raise RuntimeError(f"{language} seed {seed}: produced {len(signatures)} signatures for {len(inference_texts)} strings")
+        seed_signatures[seed] = dict(zip(inference_texts, signatures))
+        save_seed_checkpoint(output_dir, language, seed, seed_signatures[seed], inference_texts, batching_strategy)
+        print(f"{language}: checkpointed seed={seed}", flush=True)
+
+    records = []
+    for text in normalized_texts:
+        per_seed = {str(seed): seed_signatures[seed][text] for seed in seeds}
+        distinct_fxt = sorted(set(per_seed.values()))
+        records.append({
+            "language": language,
+            "text": text,
+            "count": normalized_counts[text],
+            "bpe_unique_signatures": 1,
+            "fxt_unique_signatures": len(distinct_fxt),
+            "fxt_seed_signature_count": len(distinct_fxt),
+            "has_fxt_seed_variation": len(distinct_fxt) > 1,
+            "most_common_bpe": bpe_signatures[text],
+            "most_common_fxt": per_seed[str(seeds[0])],
+            "seed_signatures": json.dumps(per_seed, ensure_ascii=False),
+        })
+    frame = pd.DataFrame.from_records(records).sort_values(["count", "text"], ascending=[False, True])
+    if not (frame["bpe_unique_signatures"] == 1).all():
+        raise RuntimeError(f"{language}: BPE signature multiplicity is not deterministic")
+    return frame, normalized_counts, seed_signatures, bpe_signatures
 
 
 def main():
     args = parse_args()
-    os.makedirs(args.output_dir, exist_ok=True)
-    # Prefer CUDA, else Apple MPS if available, else CPU
-    if torch.cuda.is_available():
-        device = "cuda"
-    else:
-        try:
-            mps_available = getattr(torch.backends, "mps").is_available()
-        except Exception:
-            mps_available = False
-        if mps_available:
-            device = "mps"
-        else:
-            device = "cpu"
-    # convert to torch.device for tensor creation and .to()
-    device = torch.device(device)
-
-    languages = args.languages.split(",")
-    splits = args.splits.split(",")
-
-    print(f"Loading FlexiTokens model from {args.model_path} on {device}")
-    model, fxt_tokenizer, config = load_fxt_model(args.model_path, device=device)
-    model.to(device)
-
-    print(f"Loading BPE tokenizer from {args.bpe_tokenizer}")
-    bpe_tokenizer = AutoTokenizer.from_pretrained(args.bpe_tokenizer)
-
-    # corpora loader
-    corpus = {lang: [] for lang in languages}
-    for lang in languages:
-        hf_lang = FLORES_MAPPING.get(lang, None)
-        if hf_lang is None:
-            raise KeyError(f"Unknown FLORES language code: {lang}")
-        texts = []
-        for split in splits:
-            # Try the official facebook/flores (may be gated). If unavailable, fall back
-            # to the public consolidated mirror 'yash9439/flores200' which exposes
-            # aligned columns like 'eng_Latn', 'spa_Latn', etc.
-            try:
-                ds = load_dataset("facebook/flores", hf_lang, split=split, trust_remote_code=True)
-                texts.extend(list(ds["sentence"]))
-            except Exception:
-                # fallback: load the consolidated mirror and read the language column
-                mirror = load_dataset("yash9439/flores200", split=split)
-                col = hf_lang
-                if col not in mirror.column_names:
-                    raise RuntimeError(f"Fallback dataset missing expected column {col}")
-                texts.extend(list(mirror[col]))
-        if args.max_examples_per_lang > 0:
-            texts = texts[: args.max_examples_per_lang]
-        corpus[lang] = texts
-        print(f"Loaded {len(texts)} sentences for {lang}")
-
-    # Main maps
-    # normalized_string -> {"count": int, "langs": Counter, "bpe_signatures": Counter, "fxt_signatures": Counter}
-    vocab = defaultdict(lambda: {"count": 0, "langs": Counter(), "bpe_signatures": Counter(), "fxt_signatures": Counter()})
-
-    # First pass: collect signatures (single-seed deterministic pass for both tokenizers)
-    for lang, texts in corpus.items():
-        for i in range(0, len(texts), args.batch_size):
-            batch_texts = texts[i : i + args.batch_size]
-            for text in batch_texts:
-                norm = normalize_text(text)
-                vocab[norm]["count"] += 1
-                vocab[norm]["langs"][lang] += 1
-                # BPE signature
-                try:
-                    bpe_sig = bpe_tokenization_signature(bpe_tokenizer, norm)
-                except Exception:
-                    bpe_sig = "<ERROR>"
-                vocab[norm]["bpe_signatures"][bpe_sig] += 1
-
-            try:
-                fxt_batch_sigs = fxt_tokenization_signature_batch(model, fxt_tokenizer, [normalize_text(t) for t in batch_texts], lang, config, seed=42, device=device)
-            except Exception:
-                fxt_batch_sigs = ["<ERROR>"] * len(batch_texts)
-
-            for text, fxt_sig in zip(batch_texts, fxt_batch_sigs):
-                norm = normalize_text(text)
-                vocab[norm]["fxt_signatures"][fxt_sig] += 1
-
-    # Consistency/stochasticity checks for FlexiTokens across seeds
-    seed_stats = {}
-    seeds = [42 + i for i in range(args.seed_repeats)]
-    for seed in seeds:
-        print(f"Running stochastic pass seed={seed}")
-        for lang, texts in corpus.items():
-            for i in range(0, len(texts), args.batch_size):
-                batch_texts = texts[i : i + args.batch_size]
-                norms = [normalize_text(t) for t in batch_texts]
-                try:
-                    fxt_batch_sigs = fxt_tokenization_signature_batch(model, fxt_tokenizer, norms, lang, config, seed=seed, device=device)
-                except Exception:
-                    fxt_batch_sigs = ["<ERROR>"] * len(batch_texts)
-                key = f"seed_{seed}"
-                seed_stats.setdefault(key, Counter())
-                for norm, fxt_sig in zip(norms, fxt_batch_sigs):
-                    seed_stats[key][(norm, fxt_sig)] += 1
-
-    # Compute per-normalized-string disagreement rate across seeds
-    fxt_disagreement = {}
-    for norm, entry in vocab.items():
-        # collect the most frequent signature per seed
-        sigs_per_seed = []
-        for seed in seeds:
-            key = f"seed_{seed}"
-            # extract signatures for this norm from seed_stats
-            matches = [sig for (n, sig), c in seed_stats[key].items() if n == norm]
-            sigs_per_seed.append(matches[0] if matches else None)
-        unique = set(sigs_per_seed)
-        unique.discard(None)
-        fxt_disagreement[norm] = {"n_signatures_across_seeds": len(unique), "seed_signatures": sigs_per_seed}
-
-    # Summaries
-    records = []
-    for norm, entry in vocab.items():
-        num_bpe = len(entry["bpe_signatures"])
-        num_fxt = len(entry["fxt_signatures"])
-        disagreement = fxt_disagreement.get(norm, {"n_signatures_across_seeds": 0})["n_signatures_across_seeds"]
-        most_common_bpe = entry["bpe_signatures"].most_common(1)[0][0] if entry["bpe_signatures"] else ""
-        most_common_fxt = entry["fxt_signatures"].most_common(1)[0][0] if entry["fxt_signatures"] else ""
-        records.append(
-            {
-                "text": norm,
-                "count": entry["count"],
-                "langs": dict(entry["langs"]),
-                "bpe_unique_signatures": num_bpe,
-                "fxt_unique_signatures": num_fxt,
-                "most_common_bpe": most_common_bpe,
-                "most_common_fxt": most_common_fxt,
-                "fxt_seed_signature_count": disagreement,
-            }
-        )
-
-    df = pd.DataFrame.from_records(records)
-    df.sort_values(["count"], ascending=False, inplace=True)
-    df.to_csv(os.path.join(args.output_dir, "tokenization_vocabulary_by_string.csv"), index=False)
-
-    # Per-language summary
-    per_lang = []
-    for lang in languages:
-        langs_rows = df[df["langs"].apply(lambda d: lang in d)]
-        per_lang.append(
-            {
-                "language": lang,
-                "unique_normalized_strings": langs_rows.shape[0],
-                "avg_bpe_signatures_per_string": langs_rows["bpe_unique_signatures"].mean(),
-                "avg_fxt_signatures_per_string": langs_rows["fxt_unique_signatures"].mean(),
-                "percent_strings_with_fxt_seed_variation": (
-                    (langs_rows["fxt_seed_signature_count"] > 1).mean() * 100
-                ),
-            }
-        )
-
-    pd.DataFrame(per_lang).to_csv(os.path.join(args.output_dir, "per_language_summary.csv"), index=False)
-
-    # Top ambiguous examples (by number of FXT signatures)
-    amb = df.sort_values(["fxt_unique_signatures", "count"], ascending=[False, False]).head(200)
-    amb.to_csv(os.path.join(args.output_dir, "top_ambiguous_strings.csv"), index=False)
-
-    # Save full JSON
-    with open(os.path.join(args.output_dir, "vocab_signatures.json"), "w") as f:
-        json.dump({k: {"count": v["count"], "langs": v["langs"], "bpe_signatures": dict(v["bpe_signatures"]), "fxt_signatures": dict(v["fxt_signatures"])} for k, v in vocab.items()}, f, indent=2)
-
-    print("Wrote results to", args.output_dir)
+    languages = [language.strip() for language in args.languages.split(",") if language.strip()]
+    splits = [split.strip() for split in args.splits.split(",") if split.strip()]
+    if len(languages) != 1:
+        raise ValueError("Run exactly one language per process so each output directory is independently auditable")
+    if not splits or args.seed_repeats < 1 or args.batch_size < 1:
+        raise ValueError("splits, seed_repeats, and batch_size must be non-empty and positive")
+    language = languages[0]
+    seeds = list(range(42, 42 + args.seed_repeats))
+    output_dir = Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    device = choose_device()
+    print(f"Loading FlexiTokens model on {device}", flush=True)
+    model, fxt_tokenizer, config = load_fxt_model(args.model_path, device)
+    language_token_id(fxt_tokenizer, config, language)
+    bpe_tokenizer = AutoTokenizer.from_pretrained(args.bpe_tokenizer, local_files_only=True)
+    texts, fingerprints = load_language_texts(language, splits, args.dataset_source)
+    if args.max_examples_per_lang > 0:
+        texts = texts[:args.max_examples_per_lang]
+    if args.expected_sentences_per_lang and args.max_examples_per_lang == 0 and len(texts) != args.expected_sentences_per_lang:
+        raise RuntimeError(f"{language}: expected {args.expected_sentences_per_lang} sentences, received {len(texts)}")
+    print(f"{language}: loaded {len(texts)} sentences; analyzing {len(set(map(normalize_text, texts)))} normalized strings", flush=True)
+    frame, normalized_counts, seed_signatures, bpe_signatures = analyze_language(
+        model, fxt_tokenizer, bpe_tokenizer, config, language, texts, seeds, args.batch_size, device,
+        output_dir, args.length_bucketed, args.clear_mps_cache_each_batch,
+    )
+    varied_count = int(frame["has_fxt_seed_variation"].sum())
+    unique_count = len(frame)
+    summary = pd.DataFrame([{
+        "language": language,
+        "total_sentences": len(texts),
+        "unique_normalized_strings": unique_count,
+        "normalization_collision_count": len(texts) - unique_count,
+        "normalization_collision_percent": (len(texts) - unique_count) / len(texts) * 100,
+        "avg_bpe_signatures_per_string": float(frame["bpe_unique_signatures"].mean()),
+        "avg_fxt_signatures_per_string": float(frame["fxt_unique_signatures"].mean()),
+        "strings_with_fxt_seed_variation": varied_count,
+        "percent_strings_with_fxt_seed_variation": varied_count / unique_count * 100,
+        "seed_repeats": len(seeds),
+        "error_count": 0,
+    }])
+    frame.to_csv(output_dir / "tokenization_vocabulary_by_string.csv", index=False)
+    frame[frame["has_fxt_seed_variation"]].sort_values(
+        ["fxt_unique_signatures", "count", "text"], ascending=[False, False, True]
+    ).head(200).to_csv(output_dir / "top_ambiguous_strings.csv", index=False)
+    summary.to_csv(output_dir / "per_language_summary.csv", index=False)
+    with (output_dir / "vocab_signatures.json").open("w") as handle:
+        json.dump({
+            "metadata": {"language": language, "seeds": seeds},
+            "vocabulary": {
+                text: {
+                    "count": normalized_counts[text],
+                    "bpe_signature": bpe_signatures[text],
+                    "seed_signatures": {str(seed): seed_signatures[seed][text] for seed in seeds},
+                }
+                for text in normalized_counts
+            },
+        }, handle, ensure_ascii=False, indent=2)
+    manifest = {
+        "status": "complete",
+        "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "dataset_source": args.dataset_source,
+        "dataset_fingerprints": fingerprints,
+        "language": language,
+        "splits": splits,
+        "seeds": seeds,
+        "batch_size": args.batch_size,
+        "max_examples_per_lang": args.max_examples_per_lang,
+        "expected_sentences_per_lang": args.expected_sentences_per_lang,
+        "device": str(device),
+        "model_path": str(Path(args.model_path).resolve()),
+        "bpe_tokenizer": str(Path(args.bpe_tokenizer).resolve()),
+        "error_count": 0,
+    }
+    with (output_dir / "run_manifest.json").open("w") as handle:
+        json.dump(manifest, handle, indent=2)
+    print(f"Wrote validated results to {output_dir}", flush=True)
 
 
 if __name__ == "__main__":
