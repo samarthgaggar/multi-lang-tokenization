@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Reproducible FLORES tokenization-consistency analysis for BPE and FlexiTokens.
 
-Each normalized string is tokenized once by BPE and once for each requested
-FlexiTokens seed. Inference errors deliberately stop the run: an error token
-must never be mistaken for a valid tokenization signature.
+Each analysis string is tokenized once by BPE and once for each requested
+FlexiTokens seed. The default analysis unit is a normalized sentence. With
+``--analysis_unit whitespace_word``, the evaluator instead builds the requested
+per-language vocabulary by NFKC-normalizing each sentence and splitting it on
+whitespace. Inference errors deliberately stop the run: an error token must
+never be mistaken for a valid tokenization signature.
 """
 import argparse
 import hashlib
@@ -47,6 +50,12 @@ def parse_args():
     parser.add_argument("--dataset_source", default="yash9439/flores200")
     parser.add_argument("--expected_sentences_per_lang", type=int, default=2009)
     parser.add_argument(
+        "--analysis_unit",
+        choices=("sentence", "whitespace_word"),
+        default="sentence",
+        help="Use complete normalized sentences or a per-language vocabulary of whitespace-delimited strings.",
+    )
+    parser.add_argument(
         "--length_bucketed",
         action="store_true",
         help="Batch normalized strings by encoded length to reduce padding; final result schema is unchanged.",
@@ -62,6 +71,24 @@ def parse_args():
 def normalize_text(text: str) -> str:
     """NFKC-normalize, trim, and collapse whitespace while preserving case."""
     return " ".join(unicodedata.normalize("NFKC", text).strip().split())
+
+
+def build_analysis_vocabulary(texts, analysis_unit: str) -> Counter:
+    """Return the counted input strings used for tokenization analysis.
+
+    ``whitespace_word`` follows the requested protocol literally: normalize a
+    FLORES sentence, then use its whitespace-delimited strings as vocabulary
+    entries. Case and punctuation are preserved, so this is a surface-form
+    vocabulary rather than a linguistic lemma vocabulary.
+    """
+    normalized_sentences = [normalize_text(text) for text in texts]
+    if any(not text for text in normalized_sentences):
+        raise ValueError("FLORES contains an empty normalized sentence")
+    if analysis_unit == "sentence":
+        return Counter(normalized_sentences)
+    if analysis_unit == "whitespace_word":
+        return Counter(word for sentence in normalized_sentences for word in sentence.split(" "))
+    raise ValueError(f"Unsupported analysis unit: {analysis_unit}")
 
 
 def choose_device():
@@ -191,7 +218,7 @@ def sequence_fingerprint(texts) -> str:
     return digest.hexdigest()
 
 
-def load_seed_checkpoint(output_dir: Path, language: str, seed: int, texts, batching_strategy: str):
+def load_seed_checkpoint(output_dir: Path, language: str, seed: int, texts, batching_strategy: str, analysis_unit: str):
     path = checkpoint_path(output_dir, seed)
     if not path.is_file():
         return None
@@ -202,6 +229,7 @@ def load_seed_checkpoint(output_dir: Path, language: str, seed: int, texts, batc
         payload.get("language") != language
         or payload.get("seed") != seed
         or payload.get("batching_strategy") != batching_strategy
+        or payload.get("analysis_unit") != analysis_unit
         or payload.get("order_fingerprint") != sequence_fingerprint(texts)
         or not isinstance(signatures, dict)
     ):
@@ -211,13 +239,14 @@ def load_seed_checkpoint(output_dir: Path, language: str, seed: int, texts, batc
     return signatures
 
 
-def save_seed_checkpoint(output_dir: Path, language: str, seed: int, signatures: dict, inference_texts, batching_strategy: str):
+def save_seed_checkpoint(output_dir: Path, language: str, seed: int, signatures: dict, inference_texts, batching_strategy: str, analysis_unit: str):
     path = checkpoint_path(output_dir, seed)
     path.parent.mkdir(parents=True, exist_ok=True)
     atomic_json_dump({
         "language": language,
         "seed": seed,
         "batching_strategy": batching_strategy,
+        "analysis_unit": analysis_unit,
         "order_fingerprint": sequence_fingerprint(inference_texts),
         "signatures": signatures,
     }, path)
@@ -233,18 +262,16 @@ def length_bucketed_texts(tokenizer, texts):
 
 def analyze_language(
     model, fxt_tokenizer, bpe_tokenizer, config, language, texts, seeds, batch_size,
-    device, output_dir, length_bucketed, clear_mps_cache_each_batch,
+    device, output_dir, length_bucketed, clear_mps_cache_each_batch, analysis_unit,
 ):
-    normalized_counts = Counter(normalize_text(text) for text in texts)
-    if "" in normalized_counts:
-        raise ValueError(f"{language} contains an empty normalized string")
-    normalized_texts = list(normalized_counts)
-    bpe_signatures = {text: bpe_signature(bpe_tokenizer, text) for text in normalized_texts}
-    inference_texts = length_bucketed_texts(fxt_tokenizer, normalized_texts) if length_bucketed else normalized_texts
+    input_counts = build_analysis_vocabulary(texts, analysis_unit)
+    analysis_texts = list(input_counts)
+    bpe_signatures = {text: bpe_signature(bpe_tokenizer, text) for text in analysis_texts}
+    inference_texts = length_bucketed_texts(fxt_tokenizer, analysis_texts) if length_bucketed else analysis_texts
     batching_strategy = "length_bucketed" if length_bucketed else "dataset_order"
     seed_signatures = {}
     for seed in seeds:
-        restored = load_seed_checkpoint(output_dir, language, seed, inference_texts, batching_strategy)
+        restored = load_seed_checkpoint(output_dir, language, seed, inference_texts, batching_strategy, analysis_unit)
         if restored is not None:
             print(f"{language}: restored checkpoint for seed={seed}", flush=True)
             seed_signatures[seed] = restored
@@ -261,17 +288,18 @@ def analyze_language(
         if len(signatures) != len(inference_texts):
             raise RuntimeError(f"{language} seed {seed}: produced {len(signatures)} signatures for {len(inference_texts)} strings")
         seed_signatures[seed] = dict(zip(inference_texts, signatures))
-        save_seed_checkpoint(output_dir, language, seed, seed_signatures[seed], inference_texts, batching_strategy)
+        save_seed_checkpoint(output_dir, language, seed, seed_signatures[seed], inference_texts, batching_strategy, analysis_unit)
         print(f"{language}: checkpointed seed={seed}", flush=True)
 
     records = []
-    for text in normalized_texts:
+    for text in analysis_texts:
         per_seed = {str(seed): seed_signatures[seed][text] for seed in seeds}
         distinct_fxt = sorted(set(per_seed.values()))
         records.append({
             "language": language,
+            "analysis_unit": analysis_unit,
             "text": text,
-            "count": normalized_counts[text],
+            "count": input_counts[text],
             "bpe_unique_signatures": 1,
             "fxt_unique_signatures": len(distinct_fxt),
             "fxt_seed_signature_count": len(distinct_fxt),
@@ -283,7 +311,7 @@ def analyze_language(
     frame = pd.DataFrame.from_records(records).sort_values(["count", "text"], ascending=[False, True])
     if not (frame["bpe_unique_signatures"] == 1).all():
         raise RuntimeError(f"{language}: BPE signature multiplicity is not deterministic")
-    return frame, normalized_counts, seed_signatures, bpe_signatures
+    return frame, input_counts, seed_signatures, bpe_signatures
 
 
 def main():
@@ -308,19 +336,27 @@ def main():
         texts = texts[:args.max_examples_per_lang]
     if args.expected_sentences_per_lang and args.max_examples_per_lang == 0 and len(texts) != args.expected_sentences_per_lang:
         raise RuntimeError(f"{language}: expected {args.expected_sentences_per_lang} sentences, received {len(texts)}")
-    print(f"{language}: loaded {len(texts)} sentences; analyzing {len(set(map(normalize_text, texts)))} normalized strings", flush=True)
-    frame, normalized_counts, seed_signatures, bpe_signatures = analyze_language(
+    input_counts = build_analysis_vocabulary(texts, args.analysis_unit)
+    total_whitespace_tokens = sum(input_counts.values()) if args.analysis_unit == "whitespace_word" else 0
+    print(
+        f"{language}: loaded {len(texts)} sentences; analyzing {len(input_counts)} {args.analysis_unit} entries",
+        flush=True,
+    )
+    frame, input_counts, seed_signatures, bpe_signatures = analyze_language(
         model, fxt_tokenizer, bpe_tokenizer, config, language, texts, seeds, args.batch_size, device,
-        output_dir, args.length_bucketed, args.clear_mps_cache_each_batch,
+        output_dir, args.length_bucketed, args.clear_mps_cache_each_batch, args.analysis_unit,
     )
     varied_count = int(frame["has_fxt_seed_variation"].sum())
     unique_count = len(frame)
     summary = pd.DataFrame([{
         "language": language,
+        "analysis_unit": args.analysis_unit,
         "total_sentences": len(texts),
+        "total_whitespace_tokens": total_whitespace_tokens,
+        "unique_vocabulary_size": unique_count,
         "unique_normalized_strings": unique_count,
-        "normalization_collision_count": len(texts) - unique_count,
-        "normalization_collision_percent": (len(texts) - unique_count) / len(texts) * 100,
+        "normalization_collision_count": len(texts) - unique_count if args.analysis_unit == "sentence" else 0,
+        "normalization_collision_percent": (len(texts) - unique_count) / len(texts) * 100 if args.analysis_unit == "sentence" else 0.0,
         "avg_bpe_signatures_per_string": float(frame["bpe_unique_signatures"].mean()),
         "avg_fxt_signatures_per_string": float(frame["fxt_unique_signatures"].mean()),
         "strings_with_fxt_seed_variation": varied_count,
@@ -328,21 +364,31 @@ def main():
         "seed_repeats": len(seeds),
         "error_count": 0,
     }])
-    frame.to_csv(output_dir / "tokenization_vocabulary_by_string.csv", index=False)
+    vocabulary_filename = "word_vocabulary_by_string.csv" if args.analysis_unit == "whitespace_word" else "tokenization_vocabulary_by_string.csv"
+    ambiguous_filename = "top_variable_words.csv" if args.analysis_unit == "whitespace_word" else "top_ambiguous_strings.csv"
+    signature_filename = "word_tokenization_map.json" if args.analysis_unit == "whitespace_word" else "vocab_signatures.json"
+    frame.to_csv(output_dir / vocabulary_filename, index=False)
     frame[frame["has_fxt_seed_variation"]].sort_values(
         ["fxt_unique_signatures", "count", "text"], ascending=[False, False, True]
-    ).head(200).to_csv(output_dir / "top_ambiguous_strings.csv", index=False)
+    ).head(200).to_csv(output_dir / ambiguous_filename, index=False)
     summary.to_csv(output_dir / "per_language_summary.csv", index=False)
-    with (output_dir / "vocab_signatures.json").open("w") as handle:
+    with (output_dir / signature_filename).open("w") as handle:
         json.dump({
-            "metadata": {"language": language, "seeds": seeds},
+            "metadata": {
+                "language": language,
+                "analysis_unit": args.analysis_unit,
+                "seeds": seeds,
+                "total_source_sentences": len(texts),
+                "total_whitespace_tokens": total_whitespace_tokens,
+                "unique_vocabulary_size": unique_count,
+            },
             "vocabulary": {
                 text: {
-                    "count": normalized_counts[text],
+                    "count": input_counts[text],
                     "bpe_signature": bpe_signatures[text],
                     "seed_signatures": {str(seed): seed_signatures[seed][text] for seed in seeds},
                 }
-                for text in normalized_counts
+                for text in input_counts
             },
         }, handle, ensure_ascii=False, indent=2)
     manifest = {
@@ -351,6 +397,7 @@ def main():
         "dataset_source": args.dataset_source,
         "dataset_fingerprints": fingerprints,
         "language": language,
+        "analysis_unit": args.analysis_unit,
         "splits": splits,
         "seeds": seeds,
         "batch_size": args.batch_size,
@@ -360,6 +407,11 @@ def main():
         "model_path": str(Path(args.model_path).resolve()),
         "bpe_tokenizer": str(Path(args.bpe_tokenizer).resolve()),
         "error_count": 0,
+        "artifacts": {
+            "vocabulary": vocabulary_filename,
+            "top_variable_entries": ambiguous_filename,
+            "tokenization_map": signature_filename,
+        },
     }
     with (output_dir / "run_manifest.json").open("w") as handle:
         json.dump(manifest, handle, indent=2)

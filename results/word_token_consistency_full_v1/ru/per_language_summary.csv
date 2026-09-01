@@ -1,0 +1,2 @@
+language,analysis_unit,total_sentences,total_whitespace_tokens,unique_vocabulary_size,unique_normalized_strings,normalization_collision_count,normalization_collision_percent,avg_bpe_signatures_per_string,avg_fxt_signatures_per_string,strings_with_fxt_seed_variation,percent_strings_with_fxt_seed_variation,seed_repeats,error_count
+ru,whitespace_word,2009,38816,17545,17545,0,0.0,1.0,2.2805357651752636,12752,72.68167569108009,5,0

@@ -1,0 +1,7 @@
+language,analysis_unit,total_sentences,total_whitespace_tokens,unique_vocabulary_size,unique_normalized_strings,normalization_collision_count,normalization_collision_percent,avg_bpe_signatures_per_string,avg_fxt_signatures_per_string,strings_with_fxt_seed_variation,percent_strings_with_fxt_seed_variation,seed_repeats,error_count
+en,whitespace_word,2009,42855,12034,12034,0,0.0,1.0,1.9877846102708991,7766,64.53382084095064,5,0
+es,whitespace_word,2009,50900,13575,13575,0,0.0,1.0,2.052523020257827,9087,66.93922651933701,5,0
+ru,whitespace_word,2009,38816,17545,17545,0,0.0,1.0,2.2805357651752636,12752,72.68167569108009,5,0
+uk,whitespace_word,2009,37566,17267,17267,0,0.0,1.0,2.31812127179012,12783,74.03138935541786,5,0
+hi,whitespace_word,2009,50250,9674,9674,0,0.0,1.0,2.0345255323547655,6538,67.58321273516643,5,0
+te,whitespace_word,2009,33326,14741,14741,0,0.0,1.0,2.0098365104131335,9770,66.27772878366461,5,0
