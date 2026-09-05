@@ -225,6 +225,9 @@ class BoundaryPredictor(nn.Module):
         self.s_lower_bound = s_lower_bound
         self.bp_type = bp_type
         self.threshold = threshold
+        # Evaluation can request the model's direct thresholding rule without
+        # changing how a checkpoint was trained.
+        self.force_deterministic_threshold = False
 
         if activation_function == "relu":
             activation_fn = nn.ReLU(inplace=True)
@@ -249,7 +252,7 @@ class BoundaryPredictor(nn.Module):
         )
         boundary_logits = self.boundary_predictor(hidden).squeeze(-1).transpose(0, 1)
         boundary_probs = torch.sigmoid(boundary_logits)
-        if self.bp_type == "gumbel":
+        if self.bp_type == "gumbel" and not self.force_deterministic_threshold:
             bernoulli = torch.distributions.relaxed_bernoulli.RelaxedBernoulli(
                 temperature=self.temp,
                 probs=boundary_probs,
@@ -260,7 +263,7 @@ class BoundaryPredictor(nn.Module):
             hard_boundaries = (
                 hard_boundaries - soft_boundaries.detach() + soft_boundaries
             )
-        elif self.bp_type in ["entropy", "unigram"]:
+        elif self.bp_type in ["entropy", "unigram"] or self.force_deterministic_threshold:
             soft_boundaries = boundary_probs
             hard_boundaries = (soft_boundaries > self.threshold).float()
 
