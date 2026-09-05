@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="460.0" y="36" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Unique FlexiTokens output segments in FLORES</text>
+<text x="24" y="270.0" transform="rotate(-90 24 270.0)" text-anchor="middle" font-family="Arial" font-size="14">Vocabulary size (unique decoded segments)</text>
+<line x1="90" y1="435" x2="880" y2="435" stroke="#333"/>
+<line x1="90" y1="435.0" x2="880" y2="435.0" stroke="#e5e7eb"/>
+<text x="82" y="440.0" text-anchor="end" font-family="Arial" font-size="12">0</text>
+<line x1="90" y1="343.8" x2="880" y2="343.8" stroke="#e5e7eb"/>
+<text x="82" y="348.8" text-anchor="end" font-family="Arial" font-size="12">3,520</text>
+<line x1="90" y1="252.5" x2="880" y2="252.5" stroke="#e5e7eb"/>
+<text x="82" y="257.5" text-anchor="end" font-family="Arial" font-size="12">7,039</text>
+<line x1="90" y1="161.2" x2="880" y2="161.2" stroke="#e5e7eb"/>
+<text x="82" y="166.2" text-anchor="end" font-family="Arial" font-size="12">10,559</text>
+<line x1="90" y1="70.0" x2="880" y2="70.0" stroke="#e5e7eb"/>
+<text x="82" y="75.0" text-anchor="end" font-family="Arial" font-size="12">14,079</text>
+<rect x="117.7" y="178.5" width="76.4" height="256.5" rx="3" fill="#3b6ea8"/>
+<text x="155.8" y="170.5" text-anchor="middle" font-family="Arial" font-size="13">9,895</text>
+<text x="155.8" y="463" text-anchor="middle" font-family="Arial" font-size="13">English</text>
+<rect x="249.3" y="130.6" width="76.4" height="304.4" rx="3" fill="#4d8b70"/>
+<text x="287.5" y="122.6" text-anchor="middle" font-family="Arial" font-size="13">11,741</text>
+<text x="287.5" y="463" text-anchor="middle" font-family="Arial" font-size="13">Spanish</text>
+<rect x="381.0" y="120.3" width="76.4" height="314.7" rx="3" fill="#9b6a9d"/>
+<text x="419.2" y="112.3" text-anchor="middle" font-family="Arial" font-size="13">12,137</text>
+<text x="419.2" y="463" text-anchor="middle" font-family="Arial" font-size="13">Russian</text>
+<rect x="512.6" y="150.3" width="76.4" height="284.7" rx="3" fill="#b87544"/>
+<text x="550.8" y="142.3" text-anchor="middle" font-family="Arial" font-size="13">10,980</text>
+<text x="550.8" y="463" text-anchor="middle" font-family="Arial" font-size="13">Ukrainian</text>
+<rect x="644.3" y="223.8" width="76.4" height="211.2" rx="3" fill="#c28b28"/>
+<text x="682.5" y="215.8" text-anchor="middle" font-family="Arial" font-size="13">8,146</text>
+<text x="682.5" y="463" text-anchor="middle" font-family="Arial" font-size="13">Hindi</text>
+<rect x="776.0" y="157.7" width="76.4" height="277.3" rx="3" fill="#5f8fa3"/>
+<text x="814.2" y="149.7" text-anchor="middle" font-family="Arial" font-size="13">10,695</text>
+<text x="814.2" y="463" text-anchor="middle" font-family="Arial" font-size="13">Telugu</text>
+</svg>
