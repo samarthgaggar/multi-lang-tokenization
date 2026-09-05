@@ -29,8 +29,14 @@ def main():
             "- Every vocabulary entry includes up to three source-sentence examples for manual inspection."
         ),
         code(
-            "from pathlib import Path\nimport json\nimport pandas as pd\nfrom IPython.display import Image, display\n\n"
-            "RESULTS = Path('results/deterministic_sentence_segment_vocabulary_full_v2')\n"
+            "from pathlib import Path\nimport json\nimport pandas as pd\nfrom IPython.display import SVG, display\n\n"
+            "RESULT_CANDIDATES = [\n"
+            "    Path('results/deterministic_sentence_segment_vocabulary_full_v2'),\n"
+            "    Path('flexitokens/results/deterministic_sentence_segment_vocabulary_full_v2'),\n"
+            "]\n"
+            "RESULTS = next((path for path in RESULT_CANDIDATES if (path / 'summary.csv').is_file()), None)\n"
+            "if RESULTS is None:\n"
+            "    raise FileNotFoundError('Run this notebook from the repository root or the flexitokens folder.')\n"
             "metadata = json.loads((RESULTS / 'run_metadata.json').read_text())\n"
             "assert metadata['boundary_rule'] == 'sigmoid(boundary_logit) > 0.5'\n"
             "assert metadata['randomness'] == 'none; Gumbel sampling is explicitly disabled for this evaluation'\n"
@@ -38,10 +44,16 @@ def main():
             "assert (summary['sentences'] == 2009).all()\n"
             "summary[['language', 'sentences', 'unique_output_segments_vocabulary_size', 'total_output_segment_occurrences', 'mean_segments_per_sentence']]"
         ),
-        markdown("## Summary charts\n\nThese figures are generated directly from `summary.csv`."),
+        markdown("## Summary charts\n\nThese descriptive charts are generated from the completed result CSVs. They describe the observed corpus output and do not measure downstream model quality."),
         code(
-            "display(Image(filename=RESULTS / 'figures' / 'vocabulary_size_by_language.svg'))\n"
-            "display(Image(filename=RESULTS / 'figures' / 'mean_segments_per_sentence.svg'))"
+            "for chart in [\n"
+            "    'vocabulary_size_by_language.svg',\n"
+            "    'mean_segments_per_sentence.svg',\n"
+            "    'total_segment_occurrences_by_language.svg',\n"
+            "    'mean_occurrences_per_vocabulary_entry.svg',\n"
+            "    'singleton_vocabulary_entries.svg',\n"
+            "]:\n"
+            "    display(SVG(filename=RESULTS / 'figures' / chart))"
         ),
         markdown("## Manual inspection examples\n\nThe following are actual stored full-sentence segmentations. Spaces and punctuation shown inside a segment are part of that decoded segment."),
         code(

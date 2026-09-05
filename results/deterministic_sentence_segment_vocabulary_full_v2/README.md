@@ -26,4 +26,4 @@ For a concise walkthrough of the method, tables, charts, and inspection examples
 
 `summary.csv` contains these aggregate values. For each language, `*_segment_vocabulary.csv` contains every vocabulary segment, its count, and example source sentences; `*_sentence_tokenizations.csv` records the full-sentence segmentations used to build it.
 
-The charts in `figures/` visualize vocabulary size and average segmentation length. They are descriptive corpus statistics, not a claim about downstream model quality.
+The charts in `figures/` visualize vocabulary size, segmentation length, total output-segment occurrences, average reuse per vocabulary entry, and the share of entries appearing once. They are descriptive corpus statistics, not a claim about downstream model quality.

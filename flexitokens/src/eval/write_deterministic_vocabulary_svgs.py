@@ -52,6 +52,18 @@ def main():
           summary["unique_output_segments_vocabulary_size"].tolist(), "Vocabulary size (unique decoded segments)", lambda value: f"{value:,.0f}")
     chart(figures / "mean_segments_per_sentence.svg", "Mean output segments per complete FLORES sentence", labels,
           summary["mean_segments_per_sentence"].tolist(), "Mean segments per sentence", lambda value: f"{value:.1f}")
+    chart(figures / "total_segment_occurrences_by_language.svg", "Total output-segment occurrences in FLORES", labels,
+          summary["total_output_segment_occurrences"].tolist(), "Segment occurrences", lambda value: f"{value:,.0f}")
+    reuse = summary["total_output_segment_occurrences"] / summary["unique_output_segments_vocabulary_size"]
+    chart(figures / "mean_occurrences_per_vocabulary_entry.svg", "Mean corpus occurrences per vocabulary entry", labels,
+          reuse.tolist(), "Mean occurrences per unique segment", lambda value: f"{value:.1f}")
+
+    singleton_percentages = []
+    for language in ORDER:
+        vocabulary = pd.read_csv(root / f"{language}_segment_vocabulary.csv")
+        singleton_percentages.append((vocabulary["count"] == 1).mean() * 100)
+    chart(figures / "singleton_vocabulary_entries.svg", "Vocabulary entries appearing exactly once", labels,
+          singleton_percentages, "Vocabulary entries (%)", lambda value: f"{value:.0f}%", maximum=100)
 
 
 if __name__ == "__main__":
