@@ -30,7 +30,7 @@ def main():
         ),
         markdown(
             "## Code used for this computation\n\n"
-            "The full evaluator is [`flexitokens/src/eval/deterministic_sentence_vocabulary.py`](https://github.com/samarthgaggar/multi-lang-tokenization/blob/six-langs/flexitokens/src/eval/deterministic_sentence_vocabulary.py). It loads each complete FLORES sentence, enables deterministic thresholding, writes the sentence tokenizations, and builds the counted segment vocabulary.\n\n"
+            "The full runnable computation is in [`deterministic_flores_computation.ipynb`](https://github.com/samarthgaggar/multi-lang-tokenization/blob/six-langs/deterministic_flores_computation.ipynb). It contains the evaluator implementation, the exact command, and the complete-sentence deterministic thresholding procedure. The matching source file is [`flexitokens/src/eval/deterministic_sentence_vocabulary.py`](https://github.com/samarthgaggar/multi-lang-tokenization/blob/six-langs/flexitokens/src/eval/deterministic_sentence_vocabulary.py).\n\n"
             "The deterministic boundary override is in [`flexitokens/src/model/fxt.py`](https://github.com/samarthgaggar/multi-lang-tokenization/blob/six-langs/flexitokens/src/model/fxt.py#L220-L270): it uses `sigmoid(boundary_logit) > 0.5` rather than the checkpoint's Gumbel sampling path.\n\n"
             "The command used for the completed run was:\n\n"
             "```bash\n"
