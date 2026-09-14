@@ -28,6 +28,15 @@ def main():
             "- The vocabulary is the counted set of unique decoded output segments across all complete-sentence tokenizations.\n"
             "- Every vocabulary entry includes up to three source-sentence examples for manual inspection."
         ),
+        markdown(
+            "## Code used for this computation\n\n"
+            "The full evaluator is [`flexitokens/src/eval/deterministic_sentence_vocabulary.py`](https://github.com/samarthgaggar/multi-lang-tokenization/blob/six-langs/flexitokens/src/eval/deterministic_sentence_vocabulary.py). It loads each complete FLORES sentence, enables deterministic thresholding, writes the sentence tokenizations, and builds the counted segment vocabulary.\n\n"
+            "The deterministic boundary override is in [`flexitokens/src/model/fxt.py`](https://github.com/samarthgaggar/multi-lang-tokenization/blob/six-langs/flexitokens/src/model/fxt.py#L220-L270): it uses `sigmoid(boundary_logit) > 0.5` rather than the checkpoint's Gumbel sampling path.\n\n"
+            "The command used for the completed run was:\n\n"
+            "```bash\n"
+            "HF_HUB_OFFLINE=1 PYTHONPATH=flexitokens python3 flexitokens/src/eval/deterministic_sentence_vocabulary.py --model_path model_ckpts/_2025-05-03_14-43-31 --output_dir results/deterministic_sentence_segment_vocabulary_full_v2 --languages en,es,ru,uk,hi,te --batch_size 4 --device cpu\n"
+            "```"
+        ),
         code(
             "from pathlib import Path\nimport json\nimport pandas as pd\nfrom IPython.display import SVG, display\n\n"
             "RESULT_CANDIDATES = [\n"
