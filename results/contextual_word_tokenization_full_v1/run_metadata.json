@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-09-25T00:54:56.262196+00:00",
+  "method": "Full FLORES sentences are model inputs. GPT-2 ByteLevel pre-token offsets locate word-like spans; contiguous Unicode letters, marks, and numbers form each analyzed word.",
+  "boundary_rule": "sigmoid(boundary_logit) > 0.5",
+  "randomness": "none; Gumbel sampling explicitly disabled",
+  "lowercase_grouping": true,
+  "space_rule": "word-level segments are restricted to one non-whitespace word span",
+  "languages_requested": [
+    "te"
+  ],
+  "splits": [
+    "dev",
+    "devtest"
+  ],
+  "device": "cpu",
+  "checkpoint_boundaries_type": "gumbel"
+}

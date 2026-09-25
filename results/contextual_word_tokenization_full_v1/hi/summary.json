@@ -1,0 +1,32 @@
+{
+  "language": "hi",
+  "sentences": 2009,
+  "word_occurrences": 50608,
+  "unique_lowercase_words": 8592,
+  "repeated_words": 3761,
+  "repeated_words_with_variation": 831,
+  "percent_repeated_words_with_variation": 22.095187450146238,
+  "intra_character_boundary_occurrences": 16784,
+  "intra_character_boundary_patterns": 6306,
+  "unique_word_tokenization_patterns": 9484,
+  "repeated_word_variant_distribution": {
+    "1": 2930,
+    "2": 772,
+    "3": 57,
+    "4": 2
+  },
+  "boundary_rule": "sigmoid(boundary_logit) > 0.5",
+  "randomness": "none; Gumbel sampling disabled",
+  "verification": "24 representative sentences reproduced exactly",
+  "dataset_fingerprints": {
+    "dev": {
+      "dataset_fingerprint": "ef73cd9feb017bfa",
+      "cached_arrow_path": "/Users/samarth.gaggar/.cache/huggingface/datasets/yash9439___flores200/default/0.0.0/3c6628a4571f383d029d6e897a89ac953ae756d3/flores200-dev.arrow"
+    },
+    "devtest": {
+      "dataset_fingerprint": "e5c4ecb1456ba2d4",
+      "cached_arrow_path": "/Users/samarth.gaggar/.cache/huggingface/datasets/yash9439___flores200/default/0.0.0/3c6628a4571f383d029d6e897a89ac953ae756d3/flores200-devtest.arrow"
+    }
+  },
+  "input_fingerprint": "882df2c2cec2d8f905168f116d6d989480f3ae4854c5bea6c43631e8d94c666a"
+}

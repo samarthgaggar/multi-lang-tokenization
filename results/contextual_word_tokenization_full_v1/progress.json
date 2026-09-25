@@ -1,0 +1,53 @@
+{
+  "languages": {
+    "en": {
+      "status": "complete",
+      "detail": {
+        "sentences": 2009,
+        "word_occurrences": 43612,
+        "repeated_words": 3939
+      }
+    },
+    "es": {
+      "status": "complete",
+      "detail": {
+        "sentences": 2009,
+        "word_occurrences": 51014,
+        "repeated_words": 4291
+      }
+    },
+    "ru": {
+      "status": "complete",
+      "detail": {
+        "sentences": 2009,
+        "word_occurrences": 39119,
+        "repeated_words": 4480
+      }
+    },
+    "uk": {
+      "status": "complete",
+      "detail": {
+        "sentences": 2009,
+        "word_occurrences": 38044,
+        "repeated_words": 4412
+      }
+    },
+    "hi": {
+      "status": "complete",
+      "detail": {
+        "sentences": 2009,
+        "word_occurrences": 50608,
+        "repeated_words": 3761
+      }
+    },
+    "te": {
+      "status": "complete",
+      "detail": {
+        "sentences": 2009,
+        "word_occurrences": 34102,
+        "repeated_words": 4165
+      }
+    }
+  },
+  "updated_at_utc": "2026-09-25T00:59:38.040364+00:00"
+}
