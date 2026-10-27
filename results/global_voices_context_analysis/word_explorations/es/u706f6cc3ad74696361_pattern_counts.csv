@@ -1,0 +1,9 @@
+boundary_signature,segmentation_display,occurrence_count,sentence_count,occurrence_percentage
+"3,8",pol|ític|a,1898,1854,57.1858993672793
+8,polític|a,688,682,20.729135281711358
+none,política,508,504,15.305815004519433
+3,pol|ítica,198,197,5.965652304911118
+"1,3,6,8",P|ol|ít|ic|a,19,19,0.5724615848147032
+6,POLÍT|ICA,3,3,0.0903886712865321
+"1,3,8",P|ol|ític|a,3,3,0.0903886712865321
+"3,6",POL|ÍT|ICA,2,2,0.06025911419102139

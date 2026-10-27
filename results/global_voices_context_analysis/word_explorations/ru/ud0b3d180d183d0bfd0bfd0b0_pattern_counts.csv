@@ -1,0 +1,7 @@
+boundary_signature,segmentation_display,occurrence_count,sentence_count,occurrence_percentage
+5,группа [byte cuts: 5],293,290,41.977077363896846
+none,группа,246,242,35.24355300859599
+"2,5,10","Группа [byte cuts: 2,5,10]",149,149,21.346704871060172
+"5,10","группа [byte cuts: 5,10]",8,8,1.146131805157593
+10,Групп|а,1,1,0.14326647564469913
+1,Группа [byte cuts: 1],1,1,0.14326647564469913

@@ -1,0 +1,61 @@
+{
+  "language": "es",
+  "query_word": "política",
+  "occurrence_count": 3319,
+  "sentence_context_count": 3212,
+  "unique_segmentation_count": 8,
+  "requested_clusters": 8,
+  "effective_clusters": 8,
+  "cluster_count_note": null,
+  "vocabulary_size": 13918,
+  "pure_groups": 0,
+  "mixed_groups": 8,
+  "dominant_share_range": [
+    0.4631,
+    0.7097
+  ],
+  "pattern_counts": [
+    {
+      "segmentation_display": "pol|ític|a",
+      "occurrence_count": 1898,
+      "occurrence_percentage": 57.19
+    },
+    {
+      "segmentation_display": "polític|a",
+      "occurrence_count": 688,
+      "occurrence_percentage": 20.73
+    },
+    {
+      "segmentation_display": "política",
+      "occurrence_count": 508,
+      "occurrence_percentage": 15.31
+    },
+    {
+      "segmentation_display": "pol|ítica",
+      "occurrence_count": 198,
+      "occurrence_percentage": 5.97
+    },
+    {
+      "segmentation_display": "P|ol|ít|ic|a",
+      "occurrence_count": 19,
+      "occurrence_percentage": 0.57
+    },
+    {
+      "segmentation_display": "POLÍT|ICA",
+      "occurrence_count": 3,
+      "occurrence_percentage": 0.09
+    },
+    {
+      "segmentation_display": "P|ol|ític|a",
+      "occurrence_count": 3,
+      "occurrence_percentage": 0.09
+    },
+    {
+      "segmentation_display": "POL|ÍT|ICA",
+      "occurrence_count": 2,
+      "occurrence_percentage": 0.06
+    }
+  ],
+  "empty_context_occurrences": 1,
+  "empty_context_sentences": 1
+}

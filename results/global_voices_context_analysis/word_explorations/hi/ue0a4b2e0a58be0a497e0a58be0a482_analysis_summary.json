@@ -1,0 +1,36 @@
+{
+  "language": "hi",
+  "query_word": "लोगों",
+  "occurrence_count": 83,
+  "sentence_context_count": 81,
+  "unique_segmentation_count": 3,
+  "requested_clusters": 3,
+  "effective_clusters": 3,
+  "cluster_count_note": null,
+  "vocabulary_size": 1102,
+  "pure_groups": 1,
+  "mixed_groups": 2,
+  "empty_context_groups": 0,
+  "empty_context_occurrences": 0,
+  "dominant_share_range": [
+    0.8571,
+    1.0
+  ],
+  "pattern_counts": [
+    {
+      "segmentation_display": "लोगों",
+      "occurrence_count": 80,
+      "occurrence_percentage": 96.39
+    },
+    {
+      "segmentation_display": "लोगों [byte cuts: 11]",
+      "occurrence_count": 2,
+      "occurrence_percentage": 2.41
+    },
+    {
+      "segmentation_display": "लोगों [byte cuts: 5,11]",
+      "occurrence_count": 1,
+      "occurrence_percentage": 1.2
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+boundary_signature,segmentation_display,occurrence_count,sentence_count,occurrence_percentage
+none,censura,687,660,93.34239130434783
+5,censu|ra,35,33,4.755434782608695
+"5,6",censu|r|a,5,5,0.6793478260869565
+"4,6",Cens|ur|a,3,3,0.4076086956521739
+"1,4,5,6",C|ens|u|r|a,3,3,0.4076086956521739
+6,Censur|a,1,1,0.1358695652173913
+4,Cens|ura,1,1,0.1358695652173913
+"4,5",Cens|u|ra,1,1,0.1358695652173913

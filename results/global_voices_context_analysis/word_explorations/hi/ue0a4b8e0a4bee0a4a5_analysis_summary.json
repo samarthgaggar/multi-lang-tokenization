@@ -1,0 +1,36 @@
+{
+  "language": "hi",
+  "query_word": "साथ",
+  "occurrence_count": 110,
+  "sentence_context_count": 103,
+  "unique_segmentation_count": 3,
+  "requested_clusters": 3,
+  "effective_clusters": 3,
+  "cluster_count_note": null,
+  "vocabulary_size": 1311,
+  "pure_groups": 0,
+  "mixed_groups": 3,
+  "dominant_share_range": [
+    0.6,
+    0.8182
+  ],
+  "pattern_counts": [
+    {
+      "segmentation_display": "साथ",
+      "occurrence_count": 81,
+      "occurrence_percentage": 73.64
+    },
+    {
+      "segmentation_display": "साथ [byte cuts: 8]",
+      "occurrence_count": 26,
+      "occurrence_percentage": 23.64
+    },
+    {
+      "segmentation_display": "साथ [byte cuts: 5,8]",
+      "occurrence_count": 3,
+      "occurrence_percentage": 2.73
+    }
+  ],
+  "empty_context_occurrences": 0,
+  "empty_context_sentences": 0
+}

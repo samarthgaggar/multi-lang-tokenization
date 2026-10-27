@@ -1,0 +1,5 @@
+cluster,boundary_signature,segmentation,pattern_label,occurrence_count,occurrence_share,sentence_count,target_occurrences_in_cluster
+cluster 1,1,R|ead,R|ead [1],127,0.1280241935483871,969,992
+cluster 1,none,read,read [none],865,0.8719758064516129,969,992
+cluster 2,1,R|ead,R|ead [1],127,0.1286727456940223,966,987
+cluster 2,none,read,read [none],860,0.8713272543059777,966,987

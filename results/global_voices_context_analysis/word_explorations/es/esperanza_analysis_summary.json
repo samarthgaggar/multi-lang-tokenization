@@ -1,0 +1,61 @@
+{
+  "language": "es",
+  "query_word": "esperanza",
+  "occurrence_count": 730,
+  "sentence_context_count": 721,
+  "unique_segmentation_count": 8,
+  "requested_clusters": 8,
+  "effective_clusters": 8,
+  "cluster_count_note": null,
+  "vocabulary_size": 4965,
+  "pure_groups": 0,
+  "mixed_groups": 8,
+  "empty_context_groups": 0,
+  "empty_context_occurrences": 0,
+  "dominant_share_range": [
+    0.3731,
+    0.7573
+  ],
+  "pattern_counts": [
+    {
+      "segmentation_display": "esperanza",
+      "occurrence_count": 451,
+      "occurrence_percentage": 61.78
+    },
+    {
+      "segmentation_display": "esper|anza",
+      "occurrence_count": 142,
+      "occurrence_percentage": 19.45
+    },
+    {
+      "segmentation_display": "esper|anz|a",
+      "occurrence_count": 84,
+      "occurrence_percentage": 11.51
+    },
+    {
+      "segmentation_display": "esperanz|a",
+      "occurrence_count": 37,
+      "occurrence_percentage": 5.07
+    },
+    {
+      "segmentation_display": "esper|an|z|a",
+      "occurrence_count": 10,
+      "occurrence_percentage": 1.37
+    },
+    {
+      "segmentation_display": "E|sp|er|an|z|a",
+      "occurrence_count": 3,
+      "occurrence_percentage": 0.41
+    },
+    {
+      "segmentation_display": "Esper|an|za",
+      "occurrence_count": 2,
+      "occurrence_percentage": 0.27
+    },
+    {
+      "segmentation_display": "E|SPER|AN|ZA",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.14
+    }
+  ]
+}

@@ -210,6 +210,10 @@ cython_debug/
 # Local model artifacts
 model_ckpts/
 
+# Local Global Voices sentence and token-level checkpoint database
+results/global_voices_context_analysis/analysis.sqlite3*
+results/global_voices_context_analysis/progress.json
+
 # macOS metadata
 .DS_Store
 

@@ -1,0 +1,4 @@
+cluster,sentence_count,target_occurrence_count,distinct_segmentations,dominant_segmentation_share,dominant_segmentation_percentage
+cluster 1,14,14,3,0.8571428571428571,85.71428571428571
+cluster 2,38,39,2,0.9743589743589743,97.43589743589743
+cluster 3,29,30,1,1.0,100.0

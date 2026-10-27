@@ -1,0 +1,51 @@
+{
+  "language": "ru",
+  "query_word": "группа",
+  "occurrence_count": 698,
+  "sentence_context_count": 687,
+  "unique_segmentation_count": 6,
+  "requested_clusters": 6,
+  "effective_clusters": 6,
+  "cluster_count_note": null,
+  "vocabulary_size": 6831,
+  "pure_groups": 0,
+  "mixed_groups": 6,
+  "empty_context_groups": 0,
+  "empty_context_occurrences": 0,
+  "dominant_share_range": [
+    0.3761,
+    0.5325
+  ],
+  "pattern_counts": [
+    {
+      "segmentation_display": "группа [byte cuts: 5]",
+      "occurrence_count": 293,
+      "occurrence_percentage": 41.98
+    },
+    {
+      "segmentation_display": "группа",
+      "occurrence_count": 246,
+      "occurrence_percentage": 35.24
+    },
+    {
+      "segmentation_display": "Группа [byte cuts: 2,5,10]",
+      "occurrence_count": 149,
+      "occurrence_percentage": 21.35
+    },
+    {
+      "segmentation_display": "группа [byte cuts: 5,10]",
+      "occurrence_count": 8,
+      "occurrence_percentage": 1.15
+    },
+    {
+      "segmentation_display": "Групп|а",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.14
+    },
+    {
+      "segmentation_display": "Группа [byte cuts: 1]",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.14
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "created_at_utc": "2026-10-20T01:15:40.824112+00:00",
+  "dataset": "sentence-transformers/parallel-sentences-global-voices",
+  "dataset_revision_requested": "main",
+  "dataset_revision_resolved": "4cc20add371f246bb1559b543f8b0dea178a1803",
+  "configs_by_language": {
+    "en": [
+      "en-es",
+      "en-ru",
+      "en-hi"
+    ],
+    "es": [
+      "en-es"
+    ],
+    "ru": [
+      "en-ru"
+    ],
+    "hi": [
+      "en-hi"
+    ]
+  },
+  "dataset_columns": {
+    "en": "english",
+    "es": "non_english",
+    "ru": "non_english",
+    "hi": "non_english"
+  },
+  "deduplication": "exact sentence text within each language; English is the union of en-es, en-ru, en-hi",
+  "model_path": "model_ckpts/_2025-05-03_14-43-31",
+  "model_file_size_bytes": 1507845606,
+  "model_file_mtime_ns": 1785063101000000000,
+  "model_config_sha256": "80e9751d938f0e534067a64afe14e673400af27c256dee2b66c54047b89a15e1",
+  "boundary_rule": "sigmoid(boundary_logit) > 0.5",
+  "boundary_randomness": "none; deterministic threshold mode is forced",
+  "word_span_method": "GPT-2 ByteLevel pre-tokenizer with contiguous Unicode letter/mark/number spans merged",
+  "primary_grouping": "lowercase; original surface form retained",
+  "environment": {
+    "python": "3.13.7",
+    "torch": "2.9.0",
+    "transformers": "4.57.1",
+    "datasets": "3.6.0",
+    "tokenizers": "0.22.1",
+    "pandas": "2.3.3"
+  },
+  "method_version": "global-voices-contexts-v1"
+}

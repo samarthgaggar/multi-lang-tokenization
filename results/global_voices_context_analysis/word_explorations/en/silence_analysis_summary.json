@@ -1,0 +1,56 @@
+{
+  "language": "en",
+  "query_word": "silence",
+  "occurrence_count": 552,
+  "sentence_context_count": 542,
+  "unique_segmentation_count": 7,
+  "requested_clusters": 7,
+  "effective_clusters": 7,
+  "cluster_count_note": null,
+  "vocabulary_size": 3740,
+  "pure_groups": 0,
+  "mixed_groups": 7,
+  "empty_context_groups": 1,
+  "empty_context_occurrences": 2,
+  "dominant_share_range": [
+    0.8125,
+    0.9778
+  ],
+  "pattern_counts": [
+    {
+      "segmentation_display": "sil|ence",
+      "occurrence_count": 522,
+      "occurrence_percentage": 94.57
+    },
+    {
+      "segmentation_display": "S|il|en|ce",
+      "occurrence_count": 13,
+      "occurrence_percentage": 2.36
+    },
+    {
+      "segmentation_display": "silence",
+      "occurrence_count": 10,
+      "occurrence_percentage": 1.81
+    },
+    {
+      "segmentation_display": "Sil|en|ce",
+      "occurrence_count": 4,
+      "occurrence_percentage": 0.72
+    },
+    {
+      "segmentation_display": "SILEN|CE",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.18
+    },
+    {
+      "segmentation_display": "s|il|ence",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.18
+    },
+    {
+      "segmentation_display": "s|il|en|c|e",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.18
+    }
+  ]
+}

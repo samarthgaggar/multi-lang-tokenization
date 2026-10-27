@@ -1,0 +1,12 @@
+boundary_signature,segmentation_display,occurrence_count,sentence_count,occurrence_percentage
+none,organizing,118,118,43.542435424354245
+9,organizin|g,80,80,29.52029520295203
+"5,9",organ|izin|g,22,22,8.118081180811808
+"5,7,9",organ|iz|in|g,20,20,7.380073800738008
+"7,9",organiz|in|g,13,13,4.797047970479705
+"2,5,7,9",Or|gan|iz|in|g,11,11,4.059040590405904
+5,organ|izing,3,3,1.1070110701107012
+7,Organiz|ing,1,1,0.36900369003690037
+"2,9",or|ganizin|g,1,1,0.36900369003690037
+"2,7",or|ganiz|ing,1,1,0.36900369003690037
+"1,2,5",o|r|gan|izing,1,1,0.36900369003690037

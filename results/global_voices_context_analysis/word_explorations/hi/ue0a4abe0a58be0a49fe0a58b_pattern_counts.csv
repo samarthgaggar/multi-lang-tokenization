@@ -1,0 +1,5 @@
+boundary_signature,segmentation_display,occurrence_count,sentence_count,occurrence_percentage
+none,फोटो,16,14,50.0
+11,फोटो [byte cuts: 11],9,7,28.125
+"5,11","फोटो [byte cuts: 5,11]",4,4,12.5
+"8,11","फोटो [byte cuts: 8,11]",3,3,9.375

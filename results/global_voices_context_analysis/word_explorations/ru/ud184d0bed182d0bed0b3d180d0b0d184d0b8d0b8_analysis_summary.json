@@ -1,0 +1,66 @@
+{
+  "language": "ru",
+  "query_word": "фотографии",
+  "occurrence_count": 797,
+  "sentence_context_count": 779,
+  "unique_segmentation_count": 9,
+  "requested_clusters": 9,
+  "effective_clusters": 9,
+  "cluster_count_note": null,
+  "vocabulary_size": 6229,
+  "pure_groups": 0,
+  "mixed_groups": 9,
+  "dominant_share_range": [
+    0.5,
+    0.7609
+  ],
+  "pattern_counts": [
+    {
+      "segmentation_display": "фотографии [byte cuts: 9,10]",
+      "occurrence_count": 507,
+      "occurrence_percentage": 63.61
+    },
+    {
+      "segmentation_display": "фотографии [byte cuts: 9,10,15]",
+      "occurrence_count": 207,
+      "occurrence_percentage": 25.97
+    },
+    {
+      "segmentation_display": "Фотографии [byte cuts: 5,9,10,15]",
+      "occurrence_count": 66,
+      "occurrence_percentage": 8.28
+    },
+    {
+      "segmentation_display": "Фотог|рафии",
+      "occurrence_count": 9,
+      "occurrence_percentage": 1.13
+    },
+    {
+      "segmentation_display": "фотографии [byte cuts: 9]",
+      "occurrence_count": 4,
+      "occurrence_percentage": 0.5
+    },
+    {
+      "segmentation_display": "Фотографии",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.13
+    },
+    {
+      "segmentation_display": "Фотографии [byte cuts: 5,9,10]",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.13
+    },
+    {
+      "segmentation_display": "фотографии [byte cuts: 1,9,10,15]",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.13
+    },
+    {
+      "segmentation_display": "фотографии [byte cuts: 1,9,10]",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.13
+    }
+  ],
+  "empty_context_occurrences": 0,
+  "empty_context_sentences": 0
+}

@@ -1,0 +1,66 @@
+{
+  "language": "en",
+  "query_word": "organizations",
+  "occurrence_count": 1161,
+  "sentence_context_count": 1142,
+  "unique_segmentation_count": 9,
+  "requested_clusters": 9,
+  "effective_clusters": 9,
+  "cluster_count_note": null,
+  "vocabulary_size": 6337,
+  "pure_groups": 0,
+  "mixed_groups": 9,
+  "dominant_share_range": [
+    0.3731,
+    0.6748
+  ],
+  "pattern_counts": [
+    {
+      "segmentation_display": "organizat|ion|s",
+      "occurrence_count": 646,
+      "occurrence_percentage": 55.64
+    },
+    {
+      "segmentation_display": "organ|iz|at|ion|s",
+      "occurrence_count": 231,
+      "occurrence_percentage": 19.9
+    },
+    {
+      "segmentation_display": "organ|izat|ion|s",
+      "occurrence_count": 146,
+      "occurrence_percentage": 12.58
+    },
+    {
+      "segmentation_display": "organiz|at|ion|s",
+      "occurrence_count": 109,
+      "occurrence_percentage": 9.39
+    },
+    {
+      "segmentation_display": "Or|gan|iz|at|ion|s",
+      "occurrence_count": 25,
+      "occurrence_percentage": 2.15
+    },
+    {
+      "segmentation_display": "Or|ganiz|at|ion|s",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.09
+    },
+    {
+      "segmentation_display": "organizations",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.09
+    },
+    {
+      "segmentation_display": "or|ganizat|ion|s",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.09
+    },
+    {
+      "segmentation_display": "or|gan|izat|ion|s",
+      "occurrence_count": 1,
+      "occurrence_percentage": 0.09
+    }
+  ],
+  "empty_context_occurrences": 0,
+  "empty_context_sentences": 0
+}
