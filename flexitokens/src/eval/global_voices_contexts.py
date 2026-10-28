@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import torch
-from datasets import Dataset
+from datasets import Dataset, load_dataset
 from huggingface_hub import HfApi
 from tokenizers.pre_tokenizers import ByteLevel
 
@@ -144,14 +144,13 @@ def source_configs(language):
 def source_texts(config, revision):
     cache_root = Path.home() / ".cache/huggingface/datasets" / DATASET.replace("/", "___") / config
     candidates = sorted(cache_root.glob(f"*/{revision}/*-train.arrow"))
-    if not candidates:
-        raise FileNotFoundError(
-            f"No local cached Arrow file for {config} at dataset revision {revision}. "
-            "Download/cache this config before running offline."
-        )
-    arrow_path = candidates[-1]
-    print(f"Reading {config} from memory-mapped local Arrow data: {arrow_path}", flush=True)
-    dataset = Dataset.from_file(str(arrow_path))
+    if candidates:
+        arrow_path = candidates[-1]
+        print(f"Reading {config} from memory-mapped local Arrow data: {arrow_path}", flush=True)
+        dataset = Dataset.from_file(str(arrow_path))
+    else:
+        print(f"Downloading/caching {config} at dataset revision {revision}", flush=True)
+        dataset = load_dataset(DATASET, name=config, split="train", revision=revision)
     if not {"english", "non_english"}.issubset(set(dataset.column_names)):
         raise RuntimeError(f"{config}: expected english/non_english columns; found {dataset.column_names}")
     print(f"{config}: stream ready", flush=True)
