@@ -117,14 +117,15 @@ def load_target_occurrences(database_path, language, word, case_mode):
 
 def _sentence_vectors_from_database(database_path, language, selected, target_field, target):
     """Build sparse sentence vectors from SQLite, leaving out the target word."""
-    target_sentence_ids = sorted(selected["sentence_id"].unique())
+    target_sentence_ids = sorted(value.item() if hasattr(value, "item") else value
+                                   for value in selected["sentence_id"].unique())
     sentence_to_row = {sentence_id: index for index, sentence_id in enumerate(target_sentence_ids)}
     table = None
     vocabulary = []
     word_to_column = {}
     rows, columns, values = array("i"), array("i"), array("d")
     with sqlite3.connect(database_path) as connection:
-        connection.execute("CREATE TEMP TABLE target_sentence_ids (sentence_id TEXT PRIMARY KEY)")
+        connection.execute("CREATE TEMP TABLE target_sentence_ids (sentence_id PRIMARY KEY)")
         connection.executemany("INSERT INTO target_sentence_ids VALUES (?)",
                                ((sentence_id,) for sentence_id in target_sentence_ids))
         exclusion = f"o.{target_field.split('.', 1)[1]} != ?"
